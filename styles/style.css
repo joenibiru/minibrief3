@@ -1,3 +1,135 @@
-.bi-telephone-fill{
-background-color: blue;
+.header--top{
+    background-color: black;
+    padding: 2px 0px 2px 0px;
+    margin: 0%;
+}
+.header--top .bi{
+    color: white;
+    margin: 4px;   
+}
+.header--top ul li{
+    list-style: none;
+    display: inline-block;
+}
+.header--top ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+.header--main{
+    background-color: #74999B;
+}
+.header--main h1{
+    margin: 10px;
+    color: white;
+}
+.header--main h2{
+    margin: 10px;
+    color: white;
+}
+.header--main h3{
+    margin: 10px;
+    color: white;
+}
+.body--content{
+    background-color: #232020;
+    color: white;
+}
+.body--header{
+    padding-top: 20px;
+    padding-bottom: 20px;
+} 
+.logo img{
+width: 140px;
+height: 178px;
+border-radius: 100px;
+border: solid white 2px;
+}
+.body--content--list{
+    margin: 4px;
+    color: white;
+}
+.body--content--list ul{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+.body--experience{
+    background-color: #B6918F;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.body--experience--list li{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 32px;
+    
+}
+.pro--list li{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+.body--experience--list--item:nth-last-child(1){
+    margin: 0;
+    
+}
+.body--experience--list--item--space:nth-child(1){
+    width: 80%;
+    display:inline-block
+}
+.pro--list{
+    margin: 0;
+    padding: 0;
+} 
+.pro--list--item:nth-last-child(1){
+    margin: 0;
+    
+}
+.pro--list--item--space:nth-child(1){
+    width: 80%;
+    display:inline-block
+}    
+.body--competences{
+    background-color: #232020;
+    color: white;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.body--competences--list--developpeur{
+    padding-left: 30px;
+    margin: 20px 0px 20px 0px;
+}
+h4{
+   padding: 20px;
+    text-align: center;
+}
+h5{
+    padding: 20px;
+}
+
+.competences--boulangerie--list{
+    padding-right: 30px;
+    margin-top: 20px;
+}
+
+.footer--top{
+    background-color: #74999B;
+    color: black;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+h6{
+    text-align: center;
+    padding: 10px;
+}
+
+@media (min-width:768px){
+
 }
