@@ -23,23 +23,46 @@
 .header--main h1{
     margin: 10px;
     color: white;
+    font-family: 'Marcellus', serif;
+    font-size: 36px;
+    text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+    
 }
 .header--main h2{
     margin: 10px;
     color: white;
+    font-family: 'Lancelot', cursive;
+    font-size: 32px;
+    text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
 }
 .header--main h3{
     margin: 10px;
     color: white;
+    font-family: 'Lancelot', sans-serif;
+    font-size: 24px;
+    text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
 }
 .body--content{
     background-color: #232020;
     color: white;
 }
+.body--content ul{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+.body--content p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
 .body--header{
     padding-top: 20px;
     padding-bottom: 20px;
+
 } 
+.body--header h4{
+    font-size: 28px;
+}
+
 .logo img{
 width: 140px;
 height: 178px;
@@ -62,55 +85,48 @@ li{
     padding-bottom: 20px;
     padding-top: 20px;
 }
+.body--experience h4{
+    font-size: 28px;
+    text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em white;
+}
 .body--experience--list li{
     display: flex;
     justify-content: space-between;
     padding-right: 32px;
-    
+    font-family: 'Roboto', sans-serif;
+    text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em white;
 }
 .pro--list li{
     display: flex;
     justify-content: space-between;
     padding-left: 32px;
     padding-right: 32px;
-}
-
-.body--experience--list--item:nth-last-child(1){
-    margin: 0;
-    
-}
-.body--experience--list--item--space:nth-child(1){
-    width: 80%;
-    display:inline-block
+    text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em white;
 }
 .pro--list{
     margin: 0;
     padding: 0;
 } 
-.pro--list--item:nth-last-child(1){
-    margin: 0;
-    
-}
-.pro--list--item--space:nth-child(1){
-    width: 80%;
-    display:inline-block
-}    
+   
 .body--competences{
     background-color: #232020;
     color: white;
     padding-bottom: 20px;
     padding-top: 20px;
 }
+.body--competences h4{
+    font-size: 28px;
+}
 .body--competences--list--developpeur{
     padding-left: 30px;
     margin: 20px 0px 20px 0px;
+    font-family: 'Roboto', sans-serif;
 }
 h4{
-   padding: 20px;
+    font-family: 'Lancelot', sans-serif;
+    font-size: 28px;
     text-align: center;
-}
-h5{
-    padding: 20px;
+
 }
 
 .competences--boulangerie--list{
@@ -124,10 +140,28 @@ h5{
     padding-bottom: 20px;
     padding-top: 20px;
 }
+.footer--top h6{
+    font-size: 28px;
+}
 
 h6{
     text-align: center;
     padding: 10px;
+    font-family: 'Marcellus', serif;
+    font-size: 28px;
+}
+.form-label{
+    font-family: 'Lancelot', cursive;
+    font-size: 20px;
+}
+.mb-3 button{
+    align-items: center;
+    font-family: 'Marcellus', serif;
+    color: darkblue;
+    background-color: chartreuse;
+    border: none;
+    font-size: 20px;
+    
 }
 
 @media (min-width:768px){
