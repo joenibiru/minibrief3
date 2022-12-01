@@ -31,7 +31,7 @@
 .header--main h2{
     margin: 10px;
     color: white;
-    font-family: 'Lancelot', cursive;
+    font-family: 'Lancelot', sans-serif;
     font-size: 32px;
     text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
 }
@@ -76,6 +76,7 @@ border: solid white 2px;
 .body--content--list ul{
     margin: 0;
     padding: 0;
+
 }
 li{
     list-style: none;
@@ -88,6 +89,7 @@ li{
 .body--experience h4{
     font-size: 28px;
     text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em white;
+    border: solid white;
 }
 .body--experience--list li{
     display: flex;
@@ -151,7 +153,7 @@ h6{
     font-size: 28px;
 }
 .form-label{
-    font-family: 'Lancelot', cursive;
+    font-family: 'Lancelot', sans-serif;
     font-size: 20px;
 }
 .mb-3 button{
@@ -162,8 +164,4 @@ h6{
     border: none;
     font-size: 20px;
     
-}
-
-@media (min-width:768px){
-
 }
