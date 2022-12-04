@@ -1,172 +1,126 @@
+body{
+    background-image: url('https://c4.wallpaperflare.com/wallpaper/1005/877/102/minimalism-colorful-beehive-patterns-texture-wallpaper-preview.jpg');
+    background-repeat: repeat-x;
+    
+}
+
 .header--top{
     background-color: black;
     padding: 2px 0px 2px 0px;
     margin: 0%;
 }
+
 .header--top .bi{
     color: white;
     margin: 4px;   
 }
+
 .header--top ul li{
     list-style: none;
     display: inline-block;
 }
+
 .header--top ul{
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: flex-end;
 }
-.header--main{
-    background-color: #74999B;
-}
+
 .header--main h1{
+    text-align: center;
     margin: 10px;
     color: white;
     font-family: 'Marcellus', serif;
-    font-size: 36px;
+    font-size: 46px;
     text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
     
 }
+
 .header--main h2{
     margin: 10px;
     color: white;
     font-family: 'Lancelot', sans-serif;
-    font-size: 32px;
+    font-size: 42px;
     text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
 }
+
 .header--main h3{
+    text-align: end;
     margin: 10px;
     color: white;
     font-family: 'Lancelot', sans-serif;
-    font-size: 24px;
+    font-size: 34px;
     text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
 }
-.header--main img{
-    border-radius: 40px;
-    padding-bottom: 10px;
-    padding-top: 10px;
+.main{
+    background-image: url("https://c4.wallpaperflare.com/wallpaper/552/148/877/matrix-backgrounds-for-widescreen-wallpaper-preview.jpg");
+    background-repeat: repeat-x;
+    background-color: black;
 }
-.body--content{
-    background-color: #232020;
-    color: white;
+.card{
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
-.body--content ul{
+.card-body{
     font-family: 'Roboto', sans-serif;
-    font-size: 20px;
+    background-color: black;
 }
-.body--content p{
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
+.card-img-top{
+    border-color: white;
 }
-.body--header{
-    padding-top: 20px;
-    padding-bottom: 20px;
-
-} 
-.body--header h4{
-    font-size: 28px;
-}
-
-.logo img{
-width: 140px;
-height: 178px;
-border-radius: 100px;
-border: solid white 2px;
-}
-.body--content--list{
-    margin: 4px;
+.card-title{
     color: white;
+    text-align: center;
+    text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
 }
-.body--content--list ul{
-    margin: 0;
-    padding: 0;
-
-}
-li{
+.card-body ul{
     list-style: none;
-}
-.body--experience{
-    background-color: #B6918F;
-    padding-bottom: 20px;
-    padding-top: 20px;
-}
-.body--experience h4{
-    font-size: 28px;
-    text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em white;
-    border: solid white;
-}
-.body--experience--list li{
-    display: flex;
-    justify-content: space-between;
-    padding-right: 32px;
-    font-family: 'Roboto', sans-serif;
-    text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em white;
-}
-.pro--list li{
-    display: flex;
-    justify-content: space-between;
-    padding-left: 32px;
-    padding-right: 32px;
-    text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em white;
-}
-.pro--list{
-    margin: 0;
-    padding: 0;
-} 
-   
-.body--competences{
-    background-color: #232020;
     color: white;
-    padding-bottom: 20px;
-    padding-top: 20px;
+    text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
 }
-.body--competences h4{
-    font-size: 28px;
+.card-text{
+    color: white;
+    text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
 }
-.body--competences--list--developpeur{
-    padding-left: 30px;
-    margin: 20px 0px 20px 0px;
-    font-family: 'Roboto', sans-serif;
+.experiences{
+    background-image: url('https://media.istockphoto.com/id/1319134570/fr/photo/fond-abstrait-hexagonal-profondeur-deffet-de-champ-panneau-3d-cellulaire-futuriste-avec.jpg?s=612x612&w=0&k=20&c=1xN5wEYYE8LQf3L1hzgfs9nt-SchCNaUL96jzUJIvJM=');
+    background-color: black;
+    background-repeat: repeat-x;
+}
+.experiences ul{
+line-height: 35px;
+text-align: center;
+text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+}
+h5{
+    font-family: 'Lancelot', sans-serif;
+    text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+}
+.competences{
+    background-image: url('https://elements-video-cover-images-0.imgix.net/files/c736b388-918b-45f5-baff-d41f3726b2b2/inline_image_preview.jpg?auto=compress%2Cformat&fit=min&h=394&w=700&s=221e04253042a39ec94b917a0499a444');
+    background-color: black;
+    background-repeat: repeat-x;
+}
+footer{
+    background-image: url('https://c4.wallpaperflare.com/wallpaper/1005/877/102/minimalism-colorful-beehive-patterns-texture-wallpaper-preview.jpg');
+    color: white;
+    text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
 }
 h4{
-    font-family: 'Lancelot', sans-serif;
-    font-size: 28px;
     text-align: center;
-
-}
-
-.competences--boulangerie--list{
-    padding-right: 30px;
-    margin-top: 20px;
-}
-
-.footer--top{
-    background-color: #74999B;
-    color: black;
-    padding-bottom: 20px;
-    padding-top: 20px;
-}
-.footer--top h6{
-    font-size: 28px;
-}
-
-h6{
-    text-align: center;
-    padding: 10px;
     font-family: 'Marcellus', serif;
-    font-size: 28px;
+    text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
 }
 .form-label{
     font-family: 'Lancelot', sans-serif;
-    font-size: 20px;
-}
-.mb-3 button{
-    align-items: center;
-    font-family: 'Marcellus', serif;
-    color: darkblue;
-    background-color: chartreuse;
-    border: none;
-    font-size: 20px;
+    text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
     
+    font-size: 20px;
+}button{
+    border: none;
+    font-family: 'Lancelot', sans-serif;
+    background-color: darkslategrey;
+    color: white;
+    text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
 }
