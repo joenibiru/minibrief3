@@ -59,8 +59,18 @@ body{
     background-color: black;
 }
 .card{
+    border: 1px solid white;
+    width: 150px;
+    transition-duration: 1s;
+    transition-timing-function: cubic-bezier(0.36, -0.36, 0.7, 1.36);
     margin-top: 20px;
     margin-bottom: 20px;
+ 
+    
+}
+.card:hover {
+    border: 3px solid white;
+    width: 800px;
 }
 .card-body{
     font-family: 'Roboto', sans-serif;
@@ -103,24 +113,19 @@ h5{
     background-repeat: repeat-x;
 }
 footer{
-    background-image: url('https://c4.wallpaperflare.com/wallpaper/1005/877/102/minimalism-colorful-beehive-patterns-texture-wallpaper-preview.jpg');
+    background-image: url('https://cdn.pixabay.com/photo/2020/09/08/17/46/hexagon-5555450_960_720.jpg');
+    background-repeat: repeat-x;
     color: white;
     text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
 }
 h4{
     text-align: center;
+    padding-top: 8px;
     font-family: 'Marcellus', serif;
     text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
 }
-.form-label{
+form{
     font-family: 'Lancelot', sans-serif;
-    text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
-    
     font-size: 20px;
-}button{
-    border: none;
-    font-family: 'Lancelot', sans-serif;
-    background-color: darkslategrey;
-    color: white;
-    text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+    
 }
