@@ -112,15 +112,3 @@ h4{
     font-family: 'Marcellus', serif;
     text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
 }
-.form-label{
-    font-family: 'Lancelot', sans-serif;
-    text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
-    
-    font-size: 20px;
-}button{
-    border: none;
-    font-family: 'Lancelot', sans-serif;
-    background-color: darkslategrey;
-    color: white;
-    text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
-}
