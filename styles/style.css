@@ -1,8 +1,4 @@
-body{
-    background-image: url('https://c4.wallpaperflare.com/wallpaper/1005/877/102/minimalism-colorful-beehive-patterns-texture-wallpaper-preview.jpg');
-    background-repeat: repeat-x;
-    
-}
+
 
 .header--top{
     background-color: black;
@@ -26,6 +22,10 @@ body{
     display: flex;
     justify-content: flex-end;
 }
+.header--main{
+    background-image: url('https://cdn.pixabay.com/photo/2020/09/08/17/46/hexagon-5555450_960_720.jpg');
+    background-repeat: repeat-x;
+}
 
 .header--main h1{
     text-align: center;
@@ -33,7 +33,7 @@ body{
     color: white;
     font-family: 'Marcellus', serif;
     font-size: 46px;
-    text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+
     
 }
 
@@ -42,7 +42,7 @@ body{
     color: white;
     font-family: 'Lancelot', sans-serif;
     font-size: 42px;
-    text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+    
 }
 
 .header--main h3{
@@ -51,25 +51,27 @@ body{
     color: white;
     font-family: 'Lancelot', sans-serif;
     font-size: 34px;
-    text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+    
 }
 .main{
-    background-image: url("https://c4.wallpaperflare.com/wallpaper/552/148/877/matrix-backgrounds-for-widescreen-wallpaper-preview.jpg");
+    background-image: url("https://img.freepik.com/vecteurs-libre/fond-numerique-code-binaire-style-matrice-nombres-baisse_1017-25336.jpg");
     background-repeat: repeat-x;
     background-color: black;
 }
 .card{
-    border: 1px solid white;
+    border: 3px solid white;
     width: 150px;
     transition-duration: 1s;
     transition-timing-function: cubic-bezier(0.36, -0.36, 0.7, 1.36);
     margin-top: 20px;
     margin-bottom: 20px;
+    -webkit-transition: all 1s;
  
     
 }
 .card:hover {
-    border: 3px solid white;
+    transform: scale(1.1);
+    border: 6px solid rgb(54, 144, 209);
     width: 800px;
 }
 .card-body{
@@ -82,16 +84,16 @@ body{
 .card-title{
     color: white;
     text-align: center;
-    text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+   
 }
 .card-body ul{
     list-style: none;
     color: white;
-    text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+    
 }
 .card-text{
     color: white;
-    text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+    
 }
 .experiences{
     background-image: url('https://media.istockphoto.com/id/1319134570/fr/photo/fond-abstrait-hexagonal-profondeur-deffet-de-champ-panneau-3d-cellulaire-futuriste-avec.jpg?s=612x612&w=0&k=20&c=1xN5wEYYE8LQf3L1hzgfs9nt-SchCNaUL96jzUJIvJM=');
@@ -101,34 +103,27 @@ body{
 .experiences ul{
 line-height: 35px;
 text-align: center;
-text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+
 }
 h5{
     font-family: 'Lancelot', sans-serif;
-    text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+  
 }
 .competences{
     background-image: url('https://elements-video-cover-images-0.imgix.net/files/c736b388-918b-45f5-baff-d41f3726b2b2/inline_image_preview.jpg?auto=compress%2Cformat&fit=min&h=394&w=700&s=221e04253042a39ec94b917a0499a444');
     background-color: black;
     background-repeat: repeat-x;
+    
+    
 }
 footer{
     background-image: url('https://cdn.pixabay.com/photo/2020/09/08/17/46/hexagon-5555450_960_720.jpg');
-    background-repeat: repeat-x;
+    background-size: cover;
     color: white;
-    text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+    
 }
 h4{
     text-align: center;
     padding-top: 8px;
     font-family: 'Marcellus', serif;
-    text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
 }
-<<<<<<< HEAD
-form{
-    font-family: 'Lancelot', sans-serif;
-    font-size: 20px;
-    
-}
-=======
->>>>>>> ca69528904b176662ac0459384c16023aaa612f0

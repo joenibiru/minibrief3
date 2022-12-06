@@ -1,4 +1,4 @@
-<?php
+/*<?php
 <<<<<<< HEAD
 
 /* var_dump($_POST); */
@@ -44,3 +44,4 @@ curl_exec($ch);
 >>>>>>> ca69528904b176662ac0459384c16023aaa612f0
 curl_close($ch);   
 ?>
+*/
