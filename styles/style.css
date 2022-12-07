@@ -7,7 +7,16 @@
 }
 
 .header--top .bi{
-    color: white;
+    color: #adff2f;
+  text-shadow:
+    0 0 7px #adff2f,
+    0 0 10px #adff2f,
+    0 0 21px #adff2f,
+    0 0 42px rgb(4, 4, 4),
+    0 0 82px rgb(4, 4, 4),
+    0 0 92px rgb(3, 4, 4),
+    0 0 102px rgb(5, 5, 5),
+    0 0 151px rgb(6, 6, 6);
     margin: 4px; 
     font-size: 25px;  
 }
@@ -29,6 +38,16 @@
 }
 
 .header--main h1{
+    color: #fff;
+    text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px #0fa,
+      0 0 82px #0fa,
+      0 0 92px #0fa,
+      0 0 102px #0fa,
+      0 0 151px #0fa;
     text-align: center;
     margin: 10px;
     color: white;
@@ -39,6 +58,16 @@
 }
 
 .header--main h2{
+    color: #fff;
+    text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px #0fa,
+      0 0 82px #0fa,
+      0 0 92px #0fa,
+      0 0 102px #0fa,
+      0 0 151px #0fa;
     margin: 10px;
     color: white;
     font-family: 'Lancelot', sans-serif;
@@ -47,6 +76,16 @@
 }
 
 .header--main h3{
+    color: #fff;
+    text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px #0fa,
+      0 0 82px #0fa,
+      0 0 92px #0fa,
+      0 0 102px #0fa,
+      0 0 151px #0fa;
     text-align: end;
     margin: 10px;
     color: white;
@@ -131,5 +170,5 @@ h4{
 button{
     border: none;
     color: white;
-    background-color: darkslategrey;
+    background-color: black;
 }
