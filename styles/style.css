@@ -60,12 +60,11 @@
 }
 .card{
     border: 3px solid white;
-    width: 150px;
     transition-duration: 1s;
     transition-timing-function: cubic-bezier(0.36, -0.36, 0.7, 1.36);
     margin-top: 20px;
     margin-bottom: 20px;
-    -webkit-transition: all 1s;
+    
  
     
 }
