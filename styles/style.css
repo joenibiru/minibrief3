@@ -60,25 +60,26 @@
 }
 .card{
     border: 3px solid white;
+    width: 300px;
+    height:550px;
     transition-duration: 1s;
     transition-timing-function: cubic-bezier(0.36, -0.36, 0.7, 1.36);
     margin-top: 20px;
-    margin-bottom: 20px;
-    
- 
-    
+    margin-bottom: 20px; 
 }
 .card:hover {
     transform: scale(1.1);
     border: 6px solid rgb(54, 144, 209);
-    width: 800px;
+    /* width: 400px; */
 }
 .card-body{
     font-family: 'Roboto', sans-serif;
     background-color: black;
+    height:300px;
 }
 .card-img-top{
     border-color: white;
+    height:250px;
 }
 .card-title{
     color: white;
@@ -125,4 +126,9 @@ h4{
     text-align: center;
     padding-top: 8px;
     font-family: 'Marcellus', serif;
+}
+button{
+    border: none;
+    color: white;
+    background-color: darkslategrey;
 }
