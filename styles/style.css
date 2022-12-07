@@ -56,7 +56,7 @@
 }
 .main{
     background-image: url("https://img.freepik.com/vecteurs-libre/fond-numerique-code-binaire-style-matrice-nombres-baisse_1017-25336.jpg");
-    background-repeat: repeat-x;
+    background-size: cover;
     background-color: black;
 }
 .card{
@@ -99,7 +99,7 @@
 .experiences{
     background-image: url('https://media.istockphoto.com/id/1319134570/fr/photo/fond-abstrait-hexagonal-profondeur-deffet-de-champ-panneau-3d-cellulaire-futuriste-avec.jpg?s=612x612&w=0&k=20&c=1xN5wEYYE8LQf3L1hzgfs9nt-SchCNaUL96jzUJIvJM=');
     background-color: black;
-    background-repeat: repeat-x;
+    background-size: cover;
 }
 .experiences ul{
 line-height: 35px;
@@ -113,7 +113,7 @@ h5{
 .competences{
     background-image: url('https://elements-video-cover-images-0.imgix.net/files/c736b388-918b-45f5-baff-d41f3726b2b2/inline_image_preview.jpg?auto=compress%2Cformat&fit=min&h=394&w=700&s=221e04253042a39ec94b917a0499a444');
     background-color: black;
-    background-repeat: repeat-x;
+    background-size: cover;
     
     
 }
