@@ -120,6 +120,12 @@
     color: white;
     background-color: gray;
     border-radius: 5%;
+    padding-left: 0;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    line-height: 35px;
+    
     
 }
 .card-text{
@@ -133,11 +139,7 @@
     background-color: black;
     background-size: cover;
 }
-.experiences ul{
-line-height: 35px;
-text-align: center;
 
-}
 h5{
     font-family: 'Lancelot', sans-serif;
   
