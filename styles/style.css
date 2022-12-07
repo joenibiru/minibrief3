@@ -8,7 +8,8 @@
 
 .header--top .bi{
     color: white;
-    margin: 4px;   
+    margin: 4px; 
+    font-size: 50px;  
 }
 
 .header--top ul li{
