@@ -176,7 +176,7 @@
 .card{
     border: 3px solid white;
     width: 300px;
-    height:600px;
+    height:300px;
     transition-duration: 1s;
     transition-timing-function: cubic-bezier(0.36, -0.36, 0.7, 1.36);
     margin-top: 20px;
@@ -219,6 +219,9 @@
     background-color: gray;
     border-radius: 5%;
     
+}
+.card-body a{
+    color: white;
 }
 .experiences{
     background-image: url('https://media.istockphoto.com/id/1319134570/fr/photo/fond-abstrait-hexagonal-profondeur-deffet-de-champ-panneau-3d-cellulaire-futuriste-avec.jpg?s=612x612&w=0&k=20&c=1xN5wEYYE8LQf3L1hzgfs9nt-SchCNaUL96jzUJIvJM=');
