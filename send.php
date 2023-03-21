@@ -1,47 +1,21 @@
-/*<?php
-<<<<<<< HEAD
+<?php
 
-/* var_dump($_POST); */
+if (isset($_POST['submit'])) {
+    // récupère les données soumises par l'utilisateur
+    $user_email = $_POST['user_email'];
+    $user_message = $_POST['user_message'];
 
-    $data = array(
-        "mail" => "joe.dwwm2022@gmail.com",// votre adresse mail
-        "objet" => $_POST["objet"] ,// sujet du message sous le format : « NOM , DATE(JJ/MM) : [OBJET] »
-        "message" =>$_POST["message"]  ,// contenu du message
-        "isHTML" => 'true');
-           
+    // construire le contenu du message électronique
+    $to = "lacoste_jonathan@orange.fr";
+    $subject = "Nouveau message de $user_email";
+    $message = "Un utilisateur a soumis un nouveau message :\n\n";
+    $message .= "Email : $user_email\n";
+    $message .= "Message : $user_message\n";
 
-/* var_dump($data); */
+    // envoyer le courriel
+    mail($to, $subject, $message);
 
-$ch = curl_init();
-
-
-curl_setopt($ch, CURLOPT_URL, "https://script.google.com/macros/s/AKfycbyAdBquoDhoL7jin4KcEDhkMv58PUVvC_o3N0MDHJsLDYDQlLyT0S_9o-lfbIOGP0vD8g/exec");
-curl_setopt($ch, CURLOPT_HEADER, 0);
-
-
-curl_exec($ch);
-
-
-=======
-    $data = array(
-        "mail" => joe.dwwm2022@gmail.com // votre adresse mail
-        "objet" => devis // sujet du message sous le format : « NOM , DATE(JJ/MM) : [OBJET] »
-        "message" => … // contenu du message
-        "isHTML" => 'true');
-           
-//on envoie le message avec la fonction mail  
-// initialisation de la session
-$ch = curl_init();
-
-// configuration des options
-curl_setopt($ch, CURLOPT_URL, "https://script.google.com/macros/s/AKfycbyAdBquoDhoL7jin4KcEDhkMv58PUVvC_o3N0MDHJsLDYDQlLyT0S_9o-lfbIOGP0vD8g/exec");
-curl_setopt($ch, CURLOPT_HEADER, 0);
-
-// exécution de la session
-curl_exec($ch);
-
-// fermeture des ressources
->>>>>>> ca69528904b176662ac0459384c16023aaa612f0
-curl_close($ch);   
+    // afficher un message de confirmation à l'utilisateur
+    echo "Merci d'avoir soumis votre message !";
+}
 ?>
-*/
