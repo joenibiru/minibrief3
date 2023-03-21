@@ -2,8 +2,8 @@
 
 if (isset($_POST['submit'])) {
     // récupère les données soumises par l'utilisateur
-    $user_email = $_POST['user_email'];
-    $user_message = $_POST['user_message'];
+    $user_email = $_POST['email'];
+    $user_message = $_POST['message'];
 
     // construire le contenu du message électronique
     $to = "lacoste_jonathan@orange.fr";
