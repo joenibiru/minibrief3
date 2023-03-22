@@ -274,14 +274,22 @@ footer {
 
 h4 {
     text-align: center;
-    padding-top: 8px;
+    padding-top: 20px;
     font-family: 'Marcellus', serif;
 }
-
-button {
-    border: none;
+.phone{
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
     color: white;
-    background: none;
+}
+
+.email{
+    font-size: 20px;
+    text-align: right;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    color: white;
 }
 
 
