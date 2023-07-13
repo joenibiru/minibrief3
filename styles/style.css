@@ -88,7 +88,7 @@
 }
 
 .header--top {
-    background-image: url("https://img.besthqwallpapers.com/Uploads/25-5-2020/134741/gold-hexagons-patterns-creative-artwork-3d-hexagons-background-with-hexagons.jpg");
+    background-image: url(/images/milky-way-2695569_1280.jpg);
     padding: 2px 0px 2px 0px;
     margin: 0%;
 }
@@ -175,7 +175,8 @@
 }
 
 .main {
-    background-image: url("https://www.papierpeintpanoramique.fr/media/catalog/product/cache/871f459736130e239a3f5e6472128962/w/0/w09398_-_small.jpg");
+    background-image: url('/images/exagone\ etoiles.jpg');
+    background-repeat: no-repeat;
     background-size: cover;
     background-color: black;
 }
@@ -247,8 +248,9 @@
 
 
 .experiences {
-    background-image: url('/images/exagone\ etoiles.jpg');
+    background-image: url(/images/troue.jpg);
     background-color: black;
+    background-repeat: no-repeat;
     background-size: cover;
 }
 
@@ -258,7 +260,8 @@ h5 {
 }
 
 .competences {
-    background-image: url('https://rare-gallery.com/mocahbig/88894-hexagon-abstract-hd-4k-artist-artwork-digital.jpg');
+    background-image: url(/images/exagone\ etoiles2.jpg);
+    background-repeat: no-repeat;
     background-color: black;
     background-size: cover;
 
@@ -268,6 +271,7 @@ h5 {
 footer {
     background-image: url('https://mobimg.b-cdn.net/v3/fetch/e7/e71d1184f754c23781814ed2c3d8abe5.jpeg');
     background-size: cover;
+    background-repeat: no-repeat;
     color: white;
 
 }
@@ -291,7 +295,6 @@ h4 {
     margin-top: 20px;
     font-family: 'Roboto', sans-serif;
 }
-
 
 
 
