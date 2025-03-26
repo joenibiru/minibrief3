@@ -37,21 +37,26 @@
   
   .social-links {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;  /* Alignement à droite au lieu de center */
     align-items: center;
     list-style: none;
     margin: 0;
     padding: 0;
   }
   
-  .social-links li {
-    margin: 0 15px;
+  /* Vous pouvez également ajouter une marge à droite pour éviter que les icônes ne soient collées au bord */
+  .header--top {
+    background-color: var(--dark-color);
+    padding: 12px 0;
   }
   
-  .social-links a {
-    color: var(--light-color);
-    font-size: 1.2rem;
-    transition: var(--hover-transition);
+  /* Si vous utilisez un conteneur pour limiter la largeur du contenu, assurez-vous que les marges sont correctes */
+  .container .social-links {
+    padding-right: 15px;  /* Ajouter un peu d'espace sur la droite si nécessaire */
+  }
+  
+  .social-links li {
+    margin: 0 25px;  /* Augmentation de l'espacement (de 15px à 25px) */
   }
   
   .social-links a:hover {
@@ -59,48 +64,7 @@
     transform: translateY(-3px);
   }
   
-  .atom {
-    position: relative;
-    width: 40px;
-    height: 40px;
-    margin-right: 25px;
-  }
-  
-  .line {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border: 2px solid var(--accent-color);
-    border-radius: 50%;
-    animation: rotate 5s linear infinite;
-  }
-  
-  .line-1 {
-    animation-delay: 0s;
-    border-color: var(--primary-color);
-  }
-  
-  .line-2 {
-    animation-delay: -1.6s;
-    border-color: var(--secondary-color);
-    transform: rotate(60deg);
-  }
-  
-  .line-3 {
-    animation-delay: -3.3s;
-    border-color: var(--accent-color);
-    transform: rotate(120deg);
-  }
-  
-  @keyframes rotate {
-    0% {
-      transform: rotateZ(0deg);
-    }
-    100% {
-      transform: rotateZ(360deg);
-    }
-  }
-  
+
   .header--main {
     background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
     color: white;
@@ -284,7 +248,7 @@
   /* La banane (élément décoratif) */
   .banana {
     height: 200px;
-    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path fill="%23f39c12" d="M30,50 C30,50 70,20 80,50 C90,80 50,80 30,50 Z" /></svg>');
+    background: url("https://pied-ong.org/assets/images/projet/projet_3.jpg") ;
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
