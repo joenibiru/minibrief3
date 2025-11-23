@@ -4,260 +4,586 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio de Jonathan Lacoste, développeur web/web mobile">
-    <link rel="stylesheet" href="styles/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Lancelot&family=Marcellus&family=Roboto&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
-    <title>Mon portfolio - Jonathan Lacoste</title>
+    <meta name="description" content="Portfolio de Jonathan Lacoste, développeur web/web mobile - Style Windows 95">
+    <link rel="shortcut icon"
+        href="/images/portfolio-word-with-pencil-instead-letter-i-art-design-gallery-concept-vector-conceptual-creative-lo.ico"
+        type="image/x-icon">
+    <link rel="stylesheet" href="/styles/style.css">
+    <title>Jonathan Lacoste - Portfolio Windows 95</title>
 </head>
 
 <body>
-    <header>
-        <div class="header--top">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-12">
-                        <ul class="social-links">
-                            <li>
-                                <a href="https://twitter.com/joedww2022" target="_blank" aria-label="Twitter">
-                                    <i class="bi bi-twitter"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.linkedin.com/in/jonathan-lacoste-6bab36257/" target="_blank" aria-label="LinkedIn">
-                                    <i class="bi bi-linkedin"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://github.com/joenibiru" target="_blank" aria-label="GitHub">
-                                    <i class="bi bi-github"></i>
-                                </a>
-                            </li>
+    <!-- Bureau Windows 95 -->
+    <div class="desktop">
+        <!-- Icônes du bureau -->
+        <div class="desktop-icons">
+            <div class="desktop-icon" onclick="openWindow('about')">
+                <div class="icon-image">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect fill='%23008080' width='32' height='32'/%3E%3Ccircle fill='%23C0C0C0' cx='16' cy='12' r='6'/%3E%3Cpath fill='%23C0C0C0' d='M8 24c0-4 4-6 8-6s8 2 8 6v4H8z'/%3E%3C/svg%3E"
+                        alt="À propos">
+                </div>
+                <div class="icon-label">À propos</div>
+            </div>
+
+            <div class="desktop-icon" onclick="openWindow('projects')">
+                <div class="icon-image">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect fill='%23FFFF00' width='28' height='22' x='2' y='8'/%3E%3Cpath fill='%23808080' d='M2 8h10l2-2h14v2H14l-2 2H2z'/%3E%3C/svg%3E"
+                        alt="Projets">
+                </div>
+                <div class="icon-label">Mes Projets</div>
+            </div>
+
+            <div class="desktop-icon" onclick="openWindow('gallery')">
+                <div class="icon-image">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect fill='%23FF00FF' width='28' height='22' x='2' y='5'/%3E%3Crect fill='%23FFF' width='20' height='14' x='6' y='9'/%3E%3Ccircle fill='%23FFD700' cx='12' cy='13' r='2'/%3E%3Cpath fill='%2300CED1' d='M14 20l-4-4 2-2 2 2 4-4 2 2z'/%3E%3C/svg%3E"
+                        alt="Galerie Photoshop">
+                </div>
+                <div class="icon-label">Galerie Photoshop</div>
+            </div>
+
+            <div class="desktop-icon" onclick="openWindow('skills')">
+                <div class="icon-image">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect fill='%23C0C0C0' width='28' height='20' x='2' y='4'/%3E%3Crect fill='%23000080' width='28' height='3' x='2' y='4'/%3E%3Ctext x='6' y='15' fill='%23000' font-family='monospace' font-size='8'%3E%26lt%3B%2F%26gt%3B%3C/text%3E%3C/svg%3E"
+                        alt="Compétences" />
+                </div>
+                <div class="icon-label">Compétences</div>
+            </div>
+
+            <div class="desktop-icon" onclick="openWindow('experience')">
+                <div class="icon-image">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect fill='%23808080' width='24' height='18' x='4' y='7'/%3E%3Crect fill='%23FFF' width='20' height='14' x='6' y='9'/%3E%3Cpath fill='%23000' d='M10 13h12v1H10zm0 2h12v1H10zm0 2h8v1h-8z'/%3E%3C/svg%3E"
+                        alt="Expérience">
+                </div>
+                <div class="icon-label">Expérience</div>
+            </div>
+
+            <div class="desktop-icon" onclick="openWindow('contact')">
+                <div class="icon-image">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect fill='%23FFFF00' width='26' height='18' x='3' y='7'/%3E%3Cpath fill='%23808080' d='M3 7l13 10 13-10z'/%3E%3C/svg%3E"
+                        alt="Contact">
+                </div>
+                <div class="icon-label">Contact</div>
+            </div>
+            <div class="desktop-icon" onclick="openWindow('recycle-bin')">
+    <div class="icon-image">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='6' y='10' width='20' height='16' fill='%23C0C0C0' stroke='%23808080'/%3E%3Crect x='10' y='6' width='12' height='4' fill='%23C0C0C0' stroke='%23808080'/%3E%3Cline x1='12' y1='12' x2='12' y2='22' stroke='%23808080'/%3E%3Cline x1='16' y1='12' x2='16' y2='22' stroke='%23808080'/%3E%3Cline x1='20' y1='12' x2='20' y2='22' stroke='%23808080'/%3E%3C/svg%3E"
+             alt="Corbeille">
+    </div>
+    <div class="icon-label">Corbeille</div>
+</div>
+
+        </div>
+
+        <!-- Fenêtre À propos -->
+        <div id="about" class="window" style="display: none;">
+            <div class="title-bar">
+                <div class="title-bar-text">À propos de moi</div>
+                <div class="title-bar-controls">
+                    <button class="title-bar-button" onclick="minimizeWindow('about')">_</button>
+                    <button class="title-bar-button" onclick="closeWindow('about')">×</button>
+                </div>
+            </div>
+            <div class="window-body">
+                <div class="profile-section">
+                    <div class="profile-image">
+                        <img src="/images/Lacoste_jonathan.CR2" alt="Jonathan Lacoste">
+                    </div>
+                    <div class="profile-text">
+                        <h2>Jonathan Lacoste</h2>
+                        <h3>Développeur Web/Web Mobile</h3>
+                        <p>
+                            <strong>Jonathan, <span id="age">41</span> ans, développeur front-end passionné basé en
+                                Lozère.</strong>
+                            <br><br>
+                            De la boulangerie au code, mon parcours est celui d'une reconversion guidée par la passion
+                            de créer et de donner vie aux interfaces. Si j'ai débuté par le back-end chez Synergee,
+                            c'est aujourd'hui le front-end qui me passionne vraiment : concevoir des expériences
+                            utilisateur fluides, des interfaces visuellement impactantes et des designs qui racontent
+                            une histoire.
+                            <br><br>
+                            <strong>Ma formation LP1 CNEA :</strong> Elle a été une révélation ! J'y découvre et
+                            développe
+                            mes compétences en <strong>graphisme web</strong>, <strong>design d'interfaces</strong>,
+                            <strong>communication réseaux</strong> et <strong>architecture front-end moderne</strong>.
+                            Ces apprentissages renforcent ma vision créative et technique du développement.
+                            <br><br>
+                            <strong>Mon profil :</strong> Un développeur polyvalent capable de dialoguer avec le
+                            back-end
+                            (bases de données, API, logique métier), mais dont le cœur bat pour le front-end, le design
+                            et l'expérience utilisateur.
+                            <br><br>
+                            <strong>Ce que je recherche :</strong> Un poste orienté front-end où je peux exprimer ma
+                            créativité, travailler sur l'esthétique et l'ergonomie, tout en contribuant à la dimension
+                            technique des projets.
+                            <br><br>
+                            <em>L'œil du designer, la rigueur du développeur, la passion de créer.</em>
+                        </p>
+
+                        <h4>Centres d'intérêt</h4>
+                        <ul>
+                            <li>Rétro-gaming</li>
+                            <li>Musique</li>
+                            <li>Informatique</li>
+                            <li>Nouvelles technologies</li>
+                            <li>Graphisme</li>
+                            <li>Montage vidéo</li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="header--main">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <h1>Bonjour !</h1>
-                        <h2>Lacoste Jonathan</h2>
-                        <h3>Développeur web/web mobile</h3>
-                    </div>
+
+        <!-- Fenêtre Projets -->
+        <div id="projects" class="window" style="display: none;">
+            <div class="title-bar">
+                <div class="title-bar-text">Mes Projets</div>
+                <div class="title-bar-controls">
+                    <button class="title-bar-button" onclick="minimizeWindow('projects')">_</button>
+                    <button class="title-bar-button" onclick="closeWindow('projects')">×</button>
                 </div>
             </div>
-        </div>
-    </header>
-
-    <main>
-        <div class="container">
-            <div class="row justify-content-between">
-                <div class="col-sm-12 col-md-6 col-lg-4 d-flex flex-column align-items-center mb-4">
-                    <div class="card text-center">
-                        <img src="/images/lacoste jonathan.jpg" class="card-img-top" alt="Photo de profil de Jonathan Lacoste">
-                        <div class="card-body">
-                            <h5 class="card-title">À propos de moi</h5>
-                            <p class="card-text">Je m'appelle Jonathan, 40 ans, résidant en Lozère. Après une carrière dans la boulangerie, j'ai suivi une formation complète en développement web. J'ai ensuite intégré l'équipe BI de Synergee où j'ai développé mes compétences en back-end et gestion de données. Aujourd'hui, je cherche un poste qui allie créativité et technique dans le développement web, un domaine qui me passionne profondément.</p>
-                        </div>
+            <div class="window-body">
+                <div class="projects-grid">
+                    <div class="project-item">
+                        <div class="project-icon">📱</div>
+                        <div class="project-name">Worldtris</div>
+                        <a href="https://worldtris.netlify.app" target="_blank" class="win95-button">Visiter</a>
                     </div>
-                </div>
-                <div class="col-sm-12 col-md-6 col-lg-4 d-flex flex-column align-items-center mb-4">
-                    <div class="card">
-                        <img src="images/retro-games.jpg" class="card-img-top" alt="Image de jeux rétro">
-                        <div class="card-body">
-                            <h5 class="card-title">Centres d'intérêt</h5>
-                            <ul class="list-unstyled">
-                                <li>Rétro-gaming</li>
-                                <li>Musique</li>
-                                <li>Informatique</li>
-                                <li>Nouvelles technologies</li>
-                                <li>Graphisme</li>
-                                <li>Montage vidéo</li>
-                            </ul>
-                        </div>
+                    <div class="project-item">
+                        <div class="project-icon">📄</div>
+                        <div class="project-name">Simone Veil</div>
+                        <a href="https://mini-brief1.netlify.app" target="_blank" class="win95-button">Visiter</a>
                     </div>
-                </div>
-                <div class="col-sm-12 col-md-6 col-lg-4 d-flex flex-column align-items-center mb-4">
-                    <div class="card">
-                        <div class="banana"></div>
-                        <div class="card-body">
-                            <h5 class="card-title">Mes projets</h5>
-                            <ul class="list-unstyled">
-                                <li>
-                                    <a href="https://worldtris.netlify.app" target="_blank" class="project-link">
-                                        <i class="bi bi-link"></i><span>Worldtris</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://mini-brief1.netlify.app" target="_blank" class="project-link">
-                                        <i class="bi bi-link"></i><span>Simone Veil</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://casse-brik.netlify.app" target="_blank" class="project-link">
-                                        <i class="bi bi-link"></i><span>Casse-brik</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://laeti-reflexologie.netlify.app/" target="_blank" class="project-link">
-                                        <i class="bi bi-link"></i><span>Site vitrine</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
+                    <div class="project-item">
+                        <div class="project-icon">🎮</div>
+                        <div class="project-name">Casse-brik</div>
+                        <a href="https://casse-brik.netlify.app" target="_blank" class="win95-button">Visiter</a>
+                    </div>
+                    <div class="project-item">
+                        <div class="project-icon">🌐</div>
+                        <div class="project-name">Site vitrine Reflexologie plantaire</div>
+                        <a href="https://laeti-reflexologie.netlify.app/" target="_blank"
+                            class="win95-button">Visiter</a>
+                    </div>
+                    <div class="project-item">
+                        <div class="project-icon">🌐</div>
+                        <div class="project-name">Site vitrine L'univers du Metal</div>
+                        <a href="https://projet-html-css.netlify.app/" target="_blank" class="win95-button">Visiter</a>
                     </div>
                 </div>
             </div>
         </div>
 
-        <section class="experiences">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 col-md-6 d-flex flex-column align-items-center mb-4">
-                        <div class="card">
-                            <img src="images/rythme-scolaire1.jpg" class="card-img-top" alt="Image de livre scolaire">
-                            <div class="card-body">
-                                <h5 class="card-title">Parcours scolaire</h5>
-                                <ul class="timeline">
-                                    <li>
-                                        <span class="formation">Formation GRETA</span>
-                                        <span class="date">2022-2023</span>
-                                    </li>
-                                    <li>
-                                        <span class="formation">BP Boulanger</span>
-                                        <span class="date">2001-2002</span>
-                                    </li>
-                                    <li>
-                                        <span class="formation">CAP Boulanger</span>
-                                        <span class="date">1999-2001</span>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 d-flex flex-column align-items-center mb-4">
-                        <div class="card">
-                            <img src="images/Entretien-Professionnel.jpg" class="card-img-top" alt="Image d'un entretien professionnel">
-                            <div class="card-body">
-                                <h5 class="card-title">Parcours professionnel</h5>
-                                <ul class="timeline">
-                                    <li>
-                                        <span class="formation">Analyste d'expmloitation BI</span>
-                                        <span class="date">2023-2024</span>
-                                    </li>
-                                    <li>
-                                        <span class="formation">Formation GRETA</span>
-                                        <span class="date">2022-2023</span>
-                                    </li>
-                                    <li>
-                                        <span class="formation">Boulanger</span>
-                                        <span class="date">2012-2022</span>
-                                    </li>
-                                    <li>
-                                        <span class="formation">Boulanger</span>
-                                        <span class="date">2006-2012</span>
-                                    </li>
-                                    <li>
-                                        <span class="formation">Boulanger</span>
-                                        <span class="date">2003-2006</span>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+<!-- Fenêtre Galerie Photoshop -->
+<div id="gallery" class="window" style="display: none;">
+    <div class="title-bar">
+        <div class="title-bar-text">Galerie Créations Photoshop</div>
+        <div class="title-bar-controls">
+            <button class="title-bar-button" onclick="minimizeWindow('gallery')">_</button>
+            <button class="title-bar-button" onclick="closeWindow('gallery')">×</button>
+        </div>
+    </div>
+
+    <div class="window-body">
+        <h3 style="margin-bottom: 15px; color: #000080;">Mes créations graphiques</h3>
+
+        <div class="gallery-grid">
+            <!-- Affiche_Marvejols_Mende_2026 -->
+            <div class="gallery-item"
+                 onclick="openLightbox('images/photoshop/Affiche_Marvejols_Mende_2026.jpg', 'Affiche_Marvejols_Mende_2026', 'Design graphique · Affiche événementielle / sport')">
+                <img src="images/photoshop/Affiche_Marvejols_Mende_2026.jpg"
+                     alt="Affiche_Marvejols_Mende_2026"
+                     class="gallery-image">
+                <div class="gallery-info">
+                    <div class="project-name">Affiche_Marvejols_Mende_2026</div>
+                    <div class="project-description">Design graphique · Affiche événementielle / sport</div>
                 </div>
             </div>
-        </section>
 
-        <section class="competences">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 col-md-6 col-lg-4 d-flex flex-column align-items-center mb-4">
-                        <div class="card">
-                            <img src="images/5445998-personne-developpant-un-site-web-glyphe-illustration-de-developpeur-web-vectoriel.jpg"
-                                class="card-img-top" alt="Illustration d'un développeur web">
-                            <div class="card-body">
-                                <h5 class="card-title">Compétences développeur</h5>
-                                <ul class="list-unstyled">
-                                    <li>Base HTML5</li>
-                                    <li>Base CSS</li>
-                                    <li>Base JavaScript</li>
-                                    <li>Base PHP</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4 d-flex flex-column align-items-center mb-4">
-                        <div class="card">
-                            <img src="images/depositphotos_233530300-stock-illustration-toolbox-icon-in-trendy-design.jpg"
-                                class="card-img-top" alt="Illustration d'une boîte à outils de développeur">
-                            <div class="card-body">
-                                <h5 class="card-title">Outils maîtrisés</h5>
-                                <ul class="list-unstyled">
-                                    <li>VScode</li>
-                                    <li>Figma</li>
-                                    <li>Davinci Resolve</li>
-                                    <li>GitHub</li>
-                                    <li>WordPress</li>
-                                    <li>Canvas</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4 d-flex flex-column align-items-center mb-4">
-                        <div class="card">
-                            <img src="images/istockphoto-1151147796-612x612.jpg" class="card-img-top" alt="Illustration de pains">
-                            <div class="card-body">
-                                <h5 class="card-title">Compétences boulangerie</h5>
-                                <ul class="list-unstyled">
-                                    <li>Pétrissage</li>
-                                    <li>Façonnage</li>
-                                    <li>Cuisson</li>
-                                    <li>Respect des règles d'hygiène</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+            <!-- Affiche prévention routière -->
+            <div class="gallery-item"
+                 onclick="openLightbox('images/photoshop/affiche test prev copie.webp', 'Affiche prévention routière', 'Design graphique · Affiche de prévention')">
+                <img src="images/photoshop/affiche test prev copie.webp"
+                     alt="Affiche prévention routière"
+                     class="gallery-image">
+                <div class="gallery-info">
+                    <div class="project-name">Affiche prévention routière</div>
+                    <div class="project-description">Design graphique · Affiche de prévention</div>
                 </div>
             </div>
-        </section>
-    </main>
 
-    <footer>
-        <div class="footer--top">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <h4>Contactez-moi</h4>                   
-                    </div>                    
+            <!-- Affiche_apocalyptoFest -->
+            <div class="gallery-item"
+                 onclick="openLightbox('images/photoshop/affiche_apocalyptoFest copie.webp', 'Affiche_apocalyptoFest', 'Montage créatif · Affiche de festival')">
+                <img src="images/photoshop/affiche_apocalyptoFest copie.webp"
+                     alt="Affiche_apocalyptoFest"
+                     class="gallery-image">
+                <div class="gallery-info">
+                    <div class="project-name">Affiche_apocalyptoFest</div>
+                    <div class="project-description">Montage créatif · Affiche de festival</div>
+                </div>
+            </div>
+
+            <!-- Affiche électorale -->
+            <div class="gallery-item"
+                 onclick="openLightbox('images/photoshop/affiche_electorale copie.webp', 'Affiche électorale', 'Compositing · Affiche électorale')">
+                <img src="images/photoshop/affiche_electorale copie.webp"
+                     alt="Affiche électorale"
+                     class="gallery-image">
+                <div class="gallery-info">
+                    <div class="project-name">Affiche électorale</div>
+                    <div class="project-description">Compositing · Affiche électorale</div>
+                </div>
+            </div>
+
+            <!-- Retouche photo sur le thème de la dualité -->
+            <div class="gallery-item"
+                 onclick="openLightbox('images/photoshop/Lacoste_jonathan_TD06 copie.webp', 'Retouche photo sur le thème de la dualité', 'Photomanipulation · Effets spéciaux')">
+                <img src="images/photoshop/Lacoste_jonathan_TD06 copie.webp"
+                     alt="Retouche photo sur le thème de la dualité"
+                     class="gallery-image">
+                <div class="gallery-info">
+                    <div class="project-name">Retouche photo sur le thème de la dualité</div>
+                    <div class="project-description">Photomanipulation · Effets spéciaux</div>
+                </div>
+            </div>
+
+            <!-- Pub tombola pour réseaux sociaux -->
+            <div class="gallery-item"
+                 onclick="openLightbox('images/photoshop/tombola copie.webp', 'Pub tombola pour réseaux sociaux', 'Affiche publicitaire · Visuel réseaux sociaux')">
+                <img src="images/photoshop/tombola copie.webp"
+                     alt="Pub tombola pour réseaux sociaux"
+                     class="gallery-image">
+                <div class="gallery-info">
+                    <div class="project-name">Pub tombola pour réseaux sociaux</div>
+                    <div class="project-description">Affiche publicitaire · Visuel réseaux sociaux</div>
+                </div>
+            </div>
+
+            <!-- Portrait style Pop-Up -->
+            <div class="gallery-item"
+                 onclick="openLightbox('images/photoshop/Lacoste_Jonathan_TD06_Portrait_V2 copie.webp', 'Portrait style Pop-Up', 'Art digital · Portrait illustré')">
+                <img src="images/photoshop/Lacoste_Jonathan_TD06_Portrait_V2 copie.webp"
+                     alt="Portrait style Pop-Up"
+                     class="gallery-image">
+                <div class="gallery-info">
+                    <div class="project-name">Portrait style Pop-Up</div>
+                    <div class="project-description">Art digital · Portrait illustré</div>
+                </div>
+            </div>
+
+            <!-- bannière_helloasso -->
+            <div class="gallery-item"
+                 onclick="openLightbox('images/photoshop/banère_helloassov2 copie 2.webp', 'bannière_helloasso', 'Webdesign · Bannière web')">
+                <img src="images/photoshop/banère_helloassov2 copie 2.webp"
+                     alt="bannière_helloasso"
+                     class="gallery-image">
+                <div class="gallery-info">
+                    <div class="project-name">bannière_helloasso</div>
+                    <div class="project-description">Webdesign · Bannière web</div>
+                </div>
+            </div>
+
+            <!-- Retouche photo HDR -->
+            <div class="gallery-item"
+                 onclick="openLightbox('images/photoshop/Matriochka_HDR-2 copie.webp', 'Retouche photo HDR', 'Retouche photo · HDR')">
+                <img src="images/photoshop/Matriochka_HDR-2 copie.webp"
+                     alt="Retouche photo HDR"
+                     class="gallery-image">
+                <div class="gallery-info">
+                    <div class="project-name">Retouche photo HDR</div>
+                    <div class="project-description">Retouche photo · HDR</div>
+                </div>
+            </div>
+
+            <!-- Création de logo -->
+            <div class="gallery-item"
+                 onclick="openLightbox('images/photoshop/logo_Géonimaux copie.webp', 'Création 10', 'Identité visuelle · Logo')">
+                <img src="images/photoshop/logo_Géonimaux copie.webp"
+                     alt="Création 10"
+                     class="gallery-image">
+                <div class="gallery-info">
+                    <div class="project-name">Création 10</div>
+                    <div class="project-description">Identité visuelle · Logo</div>
                 </div>
             </div>
         </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="phone">
-                        <i class="bi bi-telephone-forward-fill"></i>
-                        <a href="tel:0640354317">06.40.35.43.17</a>
+    </div>
+</div>
+
+
+
+
+    <div id="skills" class="window" style="display: none;">
+        <div class="title-bar">
+            <div class="title-bar-text">Compétences</div>
+            <div class="title-bar-controls">
+                <button class="title-bar-button" onclick="minimizeWindow('skills')">_</button>
+                <button class="title-bar-button" onclick="closeWindow('skills')">×</button>
+            </div>
+        </div>
+        <div class="window-body">
+            <div class="tabs">
+                <button class="tab active" onclick="switchTab(event, 'frontend-skills')">Front-End</button>
+                <button class="tab" onclick="switchTab(event, 'backend-skills')">Back-End</button>
+                <button class="tab" onclick="switchTab(event, 'tools-skills')">Outils</button>
+                <button class="tab" onclick="switchTab(event, 'other-skills')">Autres</button>
+            </div>
+
+            <div id="frontend-skills" class="tab-content active">
+                <h3>Compétences Front-End</h3>
+                <div class="skills-list">
+                    <div class="skill-item">
+                        <span class="skill-name">HTML5 / CSS3</span>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 95%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">JavaScript</span>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 85%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Responsive Design</span>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 90%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">React</span>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 75%;"></div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="email">
-                        <i class="bi bi-envelope-paper-fill"></i>
-                        <a href="mailto:lacoste_jonathan@orange.fr">lacoste_jonathan@orange.fr</a>
-                    </div>    
+            </div>
+
+            <div id="backend-skills" class="tab-content">
+                <h3>Compétences Back-End</h3>
+                <div class="skills-list">
+                    <div class="skill-item">
+                        <span class="skill-name">PHP</span>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">MySQL</span>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 75%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">API REST</span>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 70%;"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>        
-    </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-        crossorigin="anonymous"></script>
-    <script src="javascript/javescript.js"></script>
+            <div id="tools-skills" class="tab-content">
+                <h3>Outils & Logiciels</h3>
+                <ul class="tools-list">
+                    <li>💻 VS Code</li>
+                    <li>🎨 Photoshop</li>
+                    <li>🖼️ Illustrator</li>
+                    <li>🔧 Git / GitHub</li>
+                    <li>🌐 Figma</li>
+                    <li>📊 WordPress</li>
+                    <li>🎬 Premiere Pro</li>
+                </ul>
+            </div>
+
+            <div id="other-skills" class="tab-content">
+                <h3>Compétences boulangerie</h3>
+                <ul class="tools-list">
+                    <li>🍞 Pétrissage</li>
+                    <li>🥖 Façonnage</li>
+                    <li>🔥 Cuisson</li>
+                    <li>✓ Respect des règles d'hygiène</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+<!-- Fenêtre Expérience -->
+<div id="experience" class="window" style="display: none;">
+    <div class="title-bar">
+        <div class="title-bar-text">Parcours</div>
+        <div class="title-bar-controls">
+            <button class="title-bar-button" onclick="minimizeWindow('experience')">_</button>
+            <button class="title-bar-button" onclick="closeWindow('experience')">×</button>
+        </div>
+    </div>
+
+    <div class="window-body">
+
+        <div class="tabs">
+            <button class="tab active" onclick="switchTab(event, 'pro-exp')">Professionnel</button>
+            <button class="tab" onclick="switchTab(event, 'edu-exp')">Scolaire</button>
+        </div>
+
+        <!-- PARCOURS PROFESSIONNEL -->
+        <div id="pro-exp" class="tab-content active">
+            <h3>Parcours professionnel</h3>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <span class="timeline-date">2023-2024</span>
+                    <span class="timeline-title">Analyste d'exploitation BI</span>
+                </div>
+                <div class="timeline-item">
+                    <span class="timeline-date">2022-2023</span>
+                    <span class="timeline-title">Formation GRETA</span>
+                </div>
+                <div class="timeline-item">
+                    <span class="timeline-date">2012-2022</span>
+                    <span class="timeline-title">Boulanger</span>
+                </div>
+                <div class="timeline-item">
+                    <span class="timeline-date">2006-2012</span>
+                    <span class="timeline-title">Boulanger</span>
+                </div>
+                <div class="timeline-item">
+                    <span class="timeline-date">2003-2006</span>
+                    <span class="timeline-title">Boulanger</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- PARCOURS SCOLAIRE -->
+        <div id="edu-exp" class="tab-content">
+            <h3>Parcours scolaire</h3>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <span class="timeline-date">2025-2026</span>
+                    <span class="timeline-title">LP1 CNEA – Université de Nîmes</span>
+                </div>
+                <div class="timeline-item">
+                    <span class="timeline-date">2022-2023</span>
+                    <span class="timeline-title">Formation GRETA</span>
+                </div>
+                <div class="timeline-item">
+                    <span class="timeline-date">2001-2002</span>
+                    <span class="timeline-title">BP Boulanger</span>
+                </div>
+                <div class="timeline-item">
+                    <span class="timeline-date">1999-2001</span>
+                    <span class="timeline-title">CAP Boulanger</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+    <!-- Fenêtre Contact -->
+    <div id="contact" class="window" style="display: none;">
+        <div class="title-bar">
+            <div class="title-bar-text">Contact</div>
+            <div class="title-bar-controls">
+                <button class="title-bar-button" onclick="minimizeWindow('contact')">_</button>
+                <button class="title-bar-button" onclick="closeWindow('contact')">×</button>
+            </div>
+        </div>
+        <div class="window-body">
+            <div class="contact-info">
+                <h3>Contactez-moi</h3>
+                <div class="contact-item">
+                    <span class="contact-icon">📞</span>
+                    <a href="tel:0640354317">06.40.35.43.17</a>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-icon">📧</span>
+                    <a href="mailto:lacoste_jonathan@orange.fr">lacoste_jonathan@orange.fr</a>
+                </div>
+
+                <h3>Réseaux sociaux</h3>
+                <div class="social-links">
+                    <a href="https://twitter.com/joedww2022" target="_blank" class="win95-button">
+                        🐦 Twitter
+                    </a>
+                    <a href="https://www.linkedin.com/in/jonathan-lacoste-6bab36257/" target="_blank"
+                        class="win95-button">
+                        💼 LinkedIn
+                    </a>
+                    <a href="https://github.com/joenibiru" target="_blank" class="win95-button">
+                        💻 GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Fenêtre Corbeille -->
+<div id="recycle-bin" class="window" style="display: none;">
+    <div class="title-bar">
+        <div class="title-bar-text">Corbeille</div>
+        <div class="title-bar-controls">
+            <button class="title-bar-button" onclick="minimizeWindow('recycle-bin')">_</button>
+            <button class="title-bar-button" onclick="closeWindow('recycle-bin')">×</button>
+        </div>
+    </div>
+
+    <div class="window-body">
+        <p>Aucun élément dans la corbeille.</p>
+    </div>
+</div>
+
+
+    <!-- Barre des tâches -->
+    <div class="taskbar">
+        <button class="start-button" onclick="toggleStartMenu()">
+            <img src="/images/Windows 95.svg" alt="Start">
+            Démarrer
+        </button>
+
+        <div class="taskbar-windows" id="taskbar-windows">
+            <!-- Les fenêtres ouvertes apparaîtront ici -->
+        </div>
+
+        <div class="system-tray">
+            <span id="clock">12:00</span>
+        </div>
+    </div>
+
+    <!-- Menu Démarrer -->
+    <div id="start-menu" class="start-menu">
+        <div class="start-menu-sidebar">Windows 95</div>
+        <div class="start-menu-content">
+            <div class="start-menu-item" onclick="openWindow('about')">
+                <span class="start-icon">👤</span>
+                À propos
+            </div>
+            <div class="start-menu-item" onclick="openWindow('projects')">
+                <span class="start-icon">📁</span>
+                Mes Projets
+            </div>
+            <div class="start-menu-item" onclick="openWindow('gallery')">
+                <span class="start-icon">🎨</span>
+                Galerie Photoshop
+            </div>
+            <div class="start-menu-item" onclick="openWindow('skills')">
+                <span class="start-icon">🦾</span>
+                Compétences
+            </div>
+            <div class="start-menu-item" onclick="openWindow('experience')">
+                <span class="start-icon">📄</span>
+                Expérience
+            </div>
+            <div class="start-menu-item" onclick="openWindow('contact')">
+                <span class="start-icon">📧</span>
+                Contact
+            </div>
+        </div>
+    </div>
+
+    <script src="/JS/script-win95.js"></script>
 </body>
+
 </html>
