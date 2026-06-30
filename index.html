@@ -12,9 +12,56 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Bricolage+Grotesque:wght@500;600;700;800&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
+    <style>
+        :root {
+            --font-body: "Atkinson Hyperlegible", Arial, sans-serif;
+            --font-display: "Bricolage Grotesque", "Atkinson Hyperlegible", Arial, sans-serif;
+        }
+
+        body {
+            font-family: var(--font-body);
+        }
+
+        h1,
+        h2,
+        h3,
+        .brand-mark,
+        .brand-text strong,
+        .card-number,
+        .button,
+        .main-nav a,
+        .section-kicker,
+        .eyebrow {
+            font-family: var(--font-display);
+            letter-spacing: 0;
+        }
+
+        h1 {
+            font-weight: 800;
+            line-height: 0.9;
+        }
+
+        h2 {
+            font-weight: 700;
+            line-height: 0.98;
+        }
+
+        .hero-lead,
+        .profile-card p,
+        .project-card p,
+        .timeline span,
+        .section-note {
+            font-family: var(--font-body);
+        }
+
+        .eyebrow,
+        .section-kicker {
+            font-weight: 800;
+        }
+    </style>
     <title>Jonathan Lacoste - CV Portfolio Créatif</title>
 </head>
 
@@ -415,26 +462,3 @@
                 </div>
             </div>
         </section>
-    </main>
-
-    <footer class="site-footer">
-        <p>© <span data-year></span> Jonathan Lacoste · CV portfolio en ligne</p>
-        <a href="#accueil">Retour en haut</a>
-    </footer>
-
-    <div class="lightbox" role="dialog" aria-modal="true" aria-label="Aperçu de création graphique" data-lightbox
-        hidden>
-        <button class="lightbox-close" type="button" aria-label="Fermer l'aperçu" data-lightbox-close>×</button>
-        <figure>
-            <img src="" alt="" data-lightbox-image>
-            <figcaption>
-                <strong data-lightbox-title></strong>
-                <span data-lightbox-description></span>
-            </figcaption>
-        </figure>
-    </div>
-
-    <script src="JS/main.js"></script>
-</body>
-
-</html>
