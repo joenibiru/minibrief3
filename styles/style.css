@@ -162,6 +162,15 @@ button {
     background: var(--lime);
 }
 
+.main-nav a.nav-download {
+    color: var(--night);
+    background: var(--cyan);
+}
+
+.main-nav a.nav-download:hover {
+    background: var(--lime);
+}
+
 .nav-toggle {
     display: none;
     width: 44px;
@@ -304,6 +313,17 @@ h1 {
 .button-secondary:hover {
     color: var(--night);
     background: var(--paper);
+}
+
+.button-download {
+    color: var(--night);
+    border-color: rgba(34, 211, 197, 0.62);
+    background: var(--cyan);
+}
+
+.button-download:hover {
+    color: var(--night);
+    background: var(--coral);
 }
 
 .hero-facts {
@@ -688,6 +708,12 @@ h1 {
     color: var(--night);
     border-color: rgba(13, 13, 16, 0.26);
     background: rgba(255, 255, 255, 0.36);
+}
+
+.contact-section .button-download {
+    color: var(--night);
+    border-color: rgba(13, 13, 16, 0.2);
+    background: var(--cyan);
 }
 
 .social-row {
