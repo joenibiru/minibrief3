@@ -10,6 +10,7 @@ const lightboxImage = document.querySelector("[data-lightbox-image]");
 const lightboxTitle = document.querySelector("[data-lightbox-title]");
 const lightboxDescription = document.querySelector("[data-lightbox-description]");
 const lightboxClose = document.querySelector("[data-lightbox-close]");
+let lastFocusedGalleryItem = null;
 
 if (year) {
     year.textContent = new Date().getFullYear();
@@ -73,7 +74,9 @@ const openLightbox = (item) => {
     lightboxTitle.textContent = title;
     lightboxDescription.textContent = description;
     lightbox.hidden = false;
+    lastFocusedGalleryItem = item;
     document.body.style.overflow = "hidden";
+    lightboxClose?.focus();
 };
 
 const closeLightbox = () => {
@@ -82,6 +85,7 @@ const closeLightbox = () => {
     lightbox.hidden = true;
     lightboxImage.src = "";
     document.body.style.overflow = "";
+    lastFocusedGalleryItem?.focus();
 };
 
 galleryItems.forEach((item) => {
