@@ -1,270 +1,160 @@
 <!DOCTYPE html>
 <html lang="fr">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="CV portfolio de Jonathan Lacoste, développeur web et web mobile, concepteur numérique, infographiste et chargé de communication digitale.">
-    <link rel="shortcut icon"
-        href="images/portfolio-word-with-pencil-instead-letter-i-art-design-gallery-concept-vector-conceptual-creative-lo.ico"
-        type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Bricolage+Grotesque:wght@500;600;700;800&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="styles/style.css">
-    <style>
-        :root {
-            --font-body: "Atkinson Hyperlegible", Arial, sans-serif;
-            --font-display: "Bricolage Grotesque", "Atkinson Hyperlegible", Arial, sans-serif;
-        }
-
-        body {
-            font-family: var(--font-body);
-        }
-
-        h1,
-        h2,
-        h3,
-        .brand-mark,
-        .brand-text strong,
-        .card-number,
-        .button,
-        .main-nav a,
-        .section-kicker,
-        .eyebrow {
-            font-family: var(--font-display);
-            letter-spacing: 0;
-        }
-
-        h1 {
-            font-weight: 800;
-            line-height: 0.9;
-        }
-
-        h2 {
-            font-weight: 700;
-            line-height: 0.98;
-        }
-
-        .hero-lead,
-        .profile-card p,
-        .project-card p,
-        .timeline span,
-        .section-note {
-            font-family: var(--font-body);
-        }
-
-        .eyebrow,
-        .section-kicker {
-            font-weight: 800;
-        }
-    </style>
-    <title>Jonathan Lacoste - CV Portfolio Créatif</title>
-</head>
-
-<body>
-    <div class="site-frame" aria-hidden="true"></div>
-
-    <header class="site-header" data-header>
-        <a class="brand" href="#accueil" aria-label="Retour à l'accueil">
-            <span class="brand-mark">JL</span>
-            <span class="brand-text">
-                <strong>Jonathan Lacoste</strong>
-                <small>Creative web developer</small>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <meta name="description" content="Jonathan Lacoste, développeur web et designer en Lozère. Découvrez mes sites web, identités visuelles et créations de communication digitale.">
+        <meta name="theme-color" content="#0d0d10">
+        <title>Jonathan Lacoste — Développement web & design graphique</title>
+        <link rel="icon" href="images/portfolio-word-with-pencil-instead-letter-i-art-design-gallery-concept-vector-conceptual-creative-lo.ico">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Bricolage+Grotesque:wght@500;600;700;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/style.css">
+        <script src="JS/main.js" defer>
+        </script>
+    </head>
+    <body>
+        <div class="reading-progress" aria-hidden="true"></div>
+        <a class="skip-link" href="#contenu">Aller au contenu</a>
+        <header class="site-header">
+            <a class="brand" href="#accueil" aria-label="Jonathan Lacoste, accueil">
+                <span class="brand-mark">jl<span>↗</span>
+            </span>
+            <span>Jonathan Lacoste<small>Web · Design · Communication</small>
             </span>
         </a>
-
-        <button class="nav-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false" data-nav-toggle>
-            <span></span>
-            <span></span>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="navigation">Menu <span aria-hidden="true">+</span>
         </button>
-
-        <nav class="main-nav" aria-label="Navigation principale" data-nav>
-            <a href="#profil">Profil</a>
-             <a href="#creations">Créations</a>
-            <a href="#projets">Projets</a>
-            <a href="#competences">Compétences</a>
-            <a href="#parcours">Parcours</a>
-            <a href="#contact">Contact</a>
-            <a class="nav-download" href="assets/CV-Jonathan-Lacoste.pdf" download="CV-Jonathan-Lacoste.pdf"
-                type="application/pdf">CV PDF</a>
+        <nav id="navigation" class="main-nav" aria-label="Navigation principale">
+            <a href="#projets">Réalisations</a>
+            <a href="#prestations">Prestations</a>
+            <a href="#profil">À propos</a>
+            <a href="assets/CV-Jonathan-Lacoste.pdf" download>CV PDF ↗</a>
+            <a class="nav-contact" href="#contact">Parlons de votre projet <span aria-hidden="true">↗</span>
+            </a>
         </nav>
     </header>
-
-    <main>
-        <section class="hero" id="accueil">
-            <div class="hero-backdrop" aria-hidden="true">
-                <img src="images/photoshop/tombola copie.webp" alt="">
-                <img src="images/photoshop/Lacoste_Jonathan_TD06_Portrait_V2%20copie.webp" alt="">
-                <img src="images/photoshop/affiche%20soirée.png" alt="">
-            </div>
-
-            <div class="hero-content">
-                <p class="eyebrow">Développeur web mobile · Design graphique · Communication digitale</p>
-                <h1>Jonathan Lacoste</h1>
-                <p class="hero-lead">
-                    Je conçois des interfaces vivantes, lisibles et mémorables, avec l'œil du designer,
-                    la rigueur du développeur et l'énergie d'un créatif qui aime transformer les idées en expériences.
-                </p>
-
-                <div class="hero-actions" aria-label="Actions principales">
-                    <a class="button button-primary" href="#projets">Voir mes projets</a>
-                    <a class="button button-secondary" href="#contact">Me contacter</a>
-                    <a class="button button-download" href="assets/CV-Jonathan-Lacoste.pdf"
-                        download="CV-Jonathan-Lacoste.pdf" type="application/pdf">Télécharger mon CV</a>
+    <main id="contenu">
+        <section class="hero container" id="accueil">
+            <div class="hero-copy">
+                <p class="eyebrow">
+                    <span class="dot" aria-hidden="true">
+                    </span> Jonathan Lacoste · Créatif numérique en Lozère</p>
+                    <h1>Du code.<br>Du design.<br>
+                    <span>Du sens.</span>
+                </h1>
+                <p class="hero-lead">Développeur web & designer graphique. Je crée votre site, votre identité visuelle et vos supports de communication, en Lozère et à distance.</p>
+                <div class="hero-actions">
+                    <a class="button primary" href="#projets">Découvrir mes projets <span aria-hidden="true">↘</span>
+                    </a>
+                    <a class="text-link" href="mailto:contact@joenibiru.fr">Parlons de votre projet ↗</a>
                 </div>
-
-                <div class="hero-facts" aria-label="Informations rapides">
-                    <span>Basé en Lozère</span>
-                    <span>Front-end & UX/UI</span>
-                    <span>Disponible pour projets web</span>
+                <button class="motion-toggle" type="button" aria-pressed="false" aria-label="Mettre les animations en pause"><span aria-hidden="true">Ⅱ</span> Animations actives</button>
+                <p class="hero-disciplines">Développement web <span>/</span> Design graphique <span>/</span> Communication</p>
+            </div>
+            <div class="hero-visual"><div class="energy-scene" aria-hidden="true"><div class="energy-grid"></div><div class="energy-orbit orbit-one"></div><div class="energy-orbit orbit-two"></div><div class="energy-bolt"><svg viewBox="0 0 240 320" fill="none" focusable="false"><defs><linearGradient id="bolt-front" x1="40" y1="20" x2="180" y2="280" gradientUnits="userSpaceOnUse"><stop stop-color="#f5ffa9"/><stop offset=".35" stop-color="#d9ff45"/><stop offset=".75" stop-color="#a5bf17"/><stop offset="1" stop-color="#e8ff6c"/></linearGradient><linearGradient id="bolt-depth" x1="90" y1="30" x2="210" y2="260" gradientUnits="userSpaceOnUse"><stop stop-color="#91a91c"/><stop offset=".45" stop-color="#394209"/><stop offset="1" stop-color="#151904"/></linearGradient></defs><path d="m130 18-97 155 65 0-35 134 150-179-81 0 46-110Z" fill="url(#bolt-depth)"/><path d="m112 8-97 155 65 0-35 134 150-179-81 0 46-110Z" fill="url(#bolt-front)"/><path d="m112 8-97 155 65 0-35 134" stroke="#f4ffb1" stroke-width="3" stroke-linejoin="round"/><path d="m195 118 18 10-150 179-18-10Z" fill="#667714"/><path d="m114 118 18 10 46-110-18-10Z" fill="#b6d331"/><path d="m15 163 18 10h65l-18-10Z" fill="#7b9020"/><path d="m112 8 48 0" stroke="#fffed0" stroke-width="3"/></svg></div><span class="energy-coordinate">JL / ÉNERGIE CRÉATIVE</span></div><figure class="hero-portrait" data-tilt>
+                <img src="images/portfolio/portrait.webp" alt="Jonathan Lacoste" width="900" height="1200" fetchpriority="high">
+                <figcaption>
+                    <span>Le regard créatif.<br>La rigueur du développeur.</span>
+                    <span class="portrait-symbol"><svg class="bolt-icon" viewBox="0 0 100 140" fill="none" aria-hidden="true" focusable="false"><path class="bolt-side" d="M57 8 14 79 46 79 33 132 88 57 54 57 70 8Z"/><path class="bolt-face" d="M48 3 5 74 37 74 24 127 79 52 45 52 61 3Z"/><path class="bolt-edge" d="m48 3-43 71 32 0"/></svg></span>
+                </figcaption>
+            </figure></div>
+        </section>
+        <div class="discipline-strip" aria-label="Domaines d’activité"><div class="strip-track"><div class="strip-group"><span>Développement web</span><svg class="bolt-icon" viewBox="0 0 100 140" fill="none" aria-hidden="true" focusable="false"><path class="bolt-side" d="M57 8 14 79 46 79 33 132 88 57 54 57 70 8Z"/><path class="bolt-face" d="M48 3 5 74 37 74 24 127 79 52 45 52 61 3Z"/><path class="bolt-edge" d="m48 3-43 71 32 0"/></svg><span>Identité visuelle</span><svg class="bolt-icon" viewBox="0 0 100 140" fill="none" aria-hidden="true" focusable="false"><path class="bolt-side" d="M57 8 14 79 46 79 33 132 88 57 54 57 70 8Z"/><path class="bolt-face" d="M48 3 5 74 37 74 24 127 79 52 45 52 61 3Z"/><path class="bolt-edge" d="m48 3-43 71 32 0"/></svg><span>Communication digitale</span><svg class="bolt-icon" viewBox="0 0 100 140" fill="none" aria-hidden="true" focusable="false"><path class="bolt-side" d="M57 8 14 79 46 79 33 132 88 57 54 57 70 8Z"/><path class="bolt-face" d="M48 3 5 74 37 74 24 127 79 52 45 52 61 3Z"/><path class="bolt-edge" d="m48 3-43 71 32 0"/></svg></div><div class="strip-group" aria-hidden="true"><span>Développement web</span><svg class="bolt-icon" viewBox="0 0 100 140" fill="none" aria-hidden="true" focusable="false"><path class="bolt-side" d="M57 8 14 79 46 79 33 132 88 57 54 57 70 8Z"/><path class="bolt-face" d="M48 3 5 74 37 74 24 127 79 52 45 52 61 3Z"/><path class="bolt-edge" d="m48 3-43 71 32 0"/></svg><span>Identité visuelle</span><svg class="bolt-icon" viewBox="0 0 100 140" fill="none" aria-hidden="true" focusable="false"><path class="bolt-side" d="M57 8 14 79 46 79 33 132 88 57 54 57 70 8Z"/><path class="bolt-face" d="M48 3 5 74 37 74 24 127 79 52 45 52 61 3Z"/><path class="bolt-edge" d="m48 3-43 71 32 0"/></svg><span>Communication digitale</span><svg class="bolt-icon" viewBox="0 0 100 140" fill="none" aria-hidden="true" focusable="false"><path class="bolt-side" d="M57 8 14 79 46 79 33 132 88 57 54 57 70 8Z"/><path class="bolt-face" d="M48 3 5 74 37 74 24 127 79 52 45 52 61 3Z"/><path class="bolt-edge" d="m48 3-43 71 32 0"/></svg></div></div></div>
+        <section class="section container" id="projets">
+<div class="section-heading"><div><p class="section-kicker">01 / Réalisations</p><h2>Jetez un œil<br><span class="muted">à mes créations.</span></h2></div><a class="all-work-link" href="#toutes-realisations">Ouvrir la galerie <span aria-hidden="true">↗</span></a></div>
+<div class="showcase"><div class="showcase-stage" aria-hidden="true"><div class="showcase-row row-1"><div class="showcase-group"><div class="showcase-tile"><img src="images/portfolio/cartes.webp" alt="" width="1536" height="1024" loading="lazy" decoding="async"></div><div class="showcase-tile"><img src="images/portfolio/reflexologie.webp" alt="" width="1536" height="1024" loading="lazy" decoding="async"></div><div class="showcase-tile"><img src="images/portfolio/biscelia.webp" alt="" width="1536" height="1024" loading="lazy" decoding="async"></div><div class="showcase-tile"><img src="images/portfolio/archive-1.webp" alt="" width="990" height="1400" loading="lazy" decoding="async"></div><div class="showcase-tile"><img src="images/portfolio/cartes.webp" alt="" width="1536" height="1024" loading="lazy" decoding="async"></div></div><div class="showcase-group"><div class="showcase-tile"><img src="images/portfolio/cartes.webp" alt="" width="1536" height="1024" loading="lazy" decoding="async"></div><div class="showcase-tile"><img src="images/portfolio/reflexologie.webp" alt="" width="1536" height="1024" loading="lazy" decoding="async"></div><div class="showcase-tile"><img src="images/portfolio/biscelia.webp" alt="" width="1536" height="1024" loading="lazy" decoding="async"></div><div class="showcase-tile"><img src="images/portfolio/archive-1.webp" alt="" width="990" height="1400" loading="lazy" decoding="async"></div><div class="showcase-tile"><img src="images/portfolio/cartes.webp" alt="" width="1536" height="1024" loading="lazy" decoding="async"></div></div></div><div class="showcase-row row-2"><div class="showcase-group"><div class="showcase-tile"><img src="images/portfolio/jean-guy.webp" alt="" width="1536" height="1024" loading="lazy" decoding="async"></div><div class="showcase-tile"><img src="images/portfolio/archive-7.webp" alt="" width="1400" height="1400" loading="lazy" decoding="async"></div><div class="showcase-tile"><img src="images/portfolio/soiree-jeux.webp" alt="" width="1536" height="1024" loading="lazy" decoding="async"></div><div class="showcase-tile"><img src="images/portfolio/archive-4.webp" alt="" width="1400" height="788" loading="lazy" decoding="async"></div><div class="showcase-tile"><img src="images/portfolio/jean-guy.webp" alt="" width="1536" height="1024" loading="lazy" decoding="async"></div></div><div class="showcase-group"><div class="showcase-tile"><img src="images/portfolio/jean-guy.webp" alt="" width="1536" height="1024" loading="lazy" decoding="async"></div><div class="showcase-tile"><img src="images/portfolio/archive-7.webp" alt="" width="1400" height="1400" loading="lazy" decoding="async"></div><div class="showcase-tile"><img src="images/portfolio/soiree-jeux.webp" alt="" width="1536" height="1024" loading="lazy" decoding="async"></div><div class="showcase-tile"><img src="images/portfolio/archive-4.webp" alt="" width="1400" height="788" loading="lazy" decoding="async"></div><div class="showcase-tile"><img src="images/portfolio/jean-guy.webp" alt="" width="1536" height="1024" loading="lazy" decoding="async"></div></div></div><div class="showcase-row row-3"><div class="showcase-group"><div class="showcase-tile"><img src="images/portfolio/visibilite.webp" alt="" width="1254" height="1254" loading="lazy" decoding="async"></div><div class="showcase-tile"><img src="images/portfolio/biscelia.webp" alt="" width="1536" height="1024" loading="lazy" decoding="async"></div><div class="showcase-tile"><img src="images/portfolio/archive-8.webp" alt="" width="1400" height="190" loading="lazy" decoding="async"></div><div class="showcase-tile"><img src="images/portfolio/reflexologie.webp" alt="" width="1536" height="1024" loading="lazy" decoding="async"></div><div class="showcase-tile"><img src="images/portfolio/visibilite.webp" alt="" width="1254" height="1254" loading="lazy" decoding="async"></div></div><div class="showcase-group"><div class="showcase-tile"><img src="images/portfolio/visibilite.webp" alt="" width="1254" height="1254" loading="lazy" decoding="async"></div><div class="showcase-tile"><img src="images/portfolio/biscelia.webp" alt="" width="1536" height="1024" loading="lazy" decoding="async"></div><div class="showcase-tile"><img src="images/portfolio/archive-8.webp" alt="" width="1400" height="190" loading="lazy" decoding="async"></div><div class="showcase-tile"><img src="images/portfolio/reflexologie.webp" alt="" width="1536" height="1024" loading="lazy" decoding="async"></div><div class="showcase-tile"><img src="images/portfolio/visibilite.webp" alt="" width="1254" height="1254" loading="lazy" decoding="async"></div></div></div></div><div class="showcase-shade" aria-hidden="true"></div><div class="showcase-heading"><h3>De votre idée<br>naît votre <span>identité.</span></h3></div><button class="showcase-pause" type="button" aria-pressed="false" aria-label="Mettre les animations en pause"><span aria-hidden="true">Ⅱ</span> Pause</button><div class="showcase-caption"><p class="showcase-tag">Web · Print · Identité</p><p>Sites vitrines, logos, affiches<br>et cartes de visite</p></div><a class="showcase-cta" href="#toutes-realisations" aria-label="Ouvrir la galerie complète">Galerie <span aria-hidden="true">↗</span></a></div>
+<div class="direct-projects" aria-labelledby="direct-projects-title"><div class="direct-projects-heading"><h3 id="direct-projects-title">Un projet vous parle ? Explorez-le.</h3><p>Les sites sont accessibles directement. La galerie rassemble tous les visuels.</p></div><div class="quick-grid"><article class="quick-project"><button class="quick-image" data-tilt type="button" data-image="images/portfolio/reflexologie.webp" data-title="Laeti-Réflexologie" data-description="Un site pour présenter une pratique de réflexologie plantaire et faciliter la prise de contact." aria-label="Agrandir : Laeti-Réflexologie"><img src="images/portfolio/reflexologie.webp" alt="Laeti-Réflexologie" width="1536" height="1024" loading="lazy" decoding="async"><span aria-hidden="true">Aperçu ↗</span></button><div class="quick-copy"><p class="quick-tag">Site vitrine · Activité locale</p><h3>Laeti-Réflexologie</h3><p>Présenter une pratique et faciliter la prise de contact.</p><a href="https://laeti-reflexologie.fr/" target="_blank" rel="noopener noreferrer">Visiter le site <span aria-hidden="true">↗</span></a></div></article><article class="quick-project"><button class="quick-image" data-tilt type="button" data-image="images/portfolio/biscelia.webp" data-title="Maison Biscélia" data-description="Présentation d’une boutique de biscuits sur ordinateur, tablette et mobile. Aucune vente réelle." aria-label="Agrandir : Maison Biscélia"><img src="images/portfolio/biscelia.webp" alt="Maison Biscélia" width="1536" height="1024" loading="lazy" decoding="async"><span aria-hidden="true">Aperçu ↗</span></button><div class="quick-copy"><p class="quick-tag">Boutique de démonstration · Projet fictif</p><h3>Maison Biscélia</h3><p>Découvrir une boutique de biscuits sur tous les écrans.</p><a href="https://demo.joenibiru.fr/boutique/" target="_blank" rel="noopener noreferrer">Explorer la boutique <span aria-hidden="true">↗</span></a></div></article><article class="quick-project"><button class="quick-image" data-tilt type="button" data-image="images/portfolio/jean-guy.webp" data-title="Jean-Guy Multiservices" data-description="Création d’un logo et présentation de son identité visuelle." aria-label="Agrandir : Jean-Guy Multiservices"><img src="images/portfolio/jean-guy.webp" alt="Jean-Guy Multiservices" width="1536" height="1024" loading="lazy" decoding="async"><span aria-hidden="true">Aperçu ↗</span></button><div class="quick-copy"><p class="quick-tag">Identité visuelle · Projet fictif</p><h3>Jean-Guy Multiservices</h3><p>Une identité reconnaissable, du logo à sa présentation.</p><button class="quick-preview" data-tilt type="button" data-image="images/portfolio/jean-guy.webp" data-title="Jean-Guy Multiservices" data-description="Création d’un logo et présentation de son identité visuelle." aria-label="Agrandir : Jean-Guy Multiservices">Voir l’identité <span aria-hidden="true">↗</span></button></div></article></div></div>
+<details class="all-projects more-work" id="toutes-realisations"><summary>La galerie complète · visuels et détails <span aria-hidden="true">+</span></summary><div class="all-projects-content"><div class="work-grid">
+            <article class="work work-feature">
+                <button class="work-image" data-tilt type="button" data-image="images/portfolio/reflexologie.webp" data-title="Laeti-Réflexologie" data-description="Un site pour présenter une pratique de réflexologie plantaire et faciliter la prise de contact." aria-label="Agrandir : Laeti-Réflexologie">
+                    <img src="images/portfolio/reflexologie.webp" alt="Laeti-Réflexologie" width="1536" height="1024" loading="lazy" decoding="async">
+                    <span class="image-action" aria-hidden="true">Agrandir ↗</span>
+                </button>
+                <div class="work-caption">
+                    <div>
+                        <p class="work-tag">Site vitrine · Activité locale</p>
+                        <h3>Laeti-Réflexologie</h3>
+                        <p>Un site pour présenter une pratique de réflexologie plantaire et faciliter la prise de contact.</p>
+                    </div>
+                    <a class="text-link" href="https://laeti-reflexologie.fr/" target="_blank" rel="noopener noreferrer">Visiter le site <span aria-hidden="true">↗</span>
+                    </a>
                 </div>
-            </div>
-
-            <div class="hero-portrait" aria-label="Portrait de Jonathan Lacoste">
-                <img src="images/Lacoste_Jonathan.jpg" alt="Portrait de Jonathan Lacoste">
-            </div>
-        </section>
-        <section class="intro-strip" aria-label="Résumé professionnel">
-            <p>
-                Ancien boulanger reconverti dans le numérique, je garde le sens du geste précis :
-                structurer, composer, tester, améliorer. Aujourd'hui, je relie développement front-end,
-                identité visuelle et communication digitale pour créer des supports utiles, beaux et cohérents.
-            </p>
-        </section>
-
-        <section class="section profile-section" id="profil">
-            <div class="section-heading">
-                <span class="section-kicker">Profil</span>
-                <h2>Un profil hybride pour des projets qui doivent autant fonctionner que marquer les esprits.</h2>
-            </div>
-
-            <div class="profile-grid">
-                <article class="profile-card">
-                    <span class="card-number">01</span>
-                    <h3>Interface & front-end</h3>
-                    <p>
-                        HTML, CSS, JavaScript, responsive design et intégration soignée pour construire des
-                        expériences rapides, accessibles et agréables à parcourir.
-                    </p>
-                </article>
-
-                <article class="profile-card">
-                    <span class="card-number">02</span>
-                    <h3>Création graphique</h3>
-                    <p>
-                        Photoshop, Illustrator, affiches, visuels réseaux sociaux, bannières et identités :
-                        je donne une direction visuelle claire aux projets numériques.
-                    </p>
-                </article>
-
-                <article class="profile-card">
-                    <span class="card-number">03</span>
-                    <h3>Communication digitale</h3>
-                    <p>
-                        Je pense les contenus pour leur contexte : message, cible, canal, lisibilité et impact.
-                        Le design sert toujours une intention.
-                    </p>
-                </article>
-            </div>
-        </section>
-
-        <section class="section creations-section" id="creations">
-            <div class="section-heading">
-                <span class="section-kicker">Créations graphiques</span>
-                <h2>Affiches, retouches, visuels sociaux : un terrain d'expérimentation graphique assumé.</h2>
-            </div>
-
-            <div class="gallery-grid" data-gallery>
-                <button class="gallery-item tall" type="button"
-                    data-image="images/photoshop/affiche soirée.png"
-                    data-title="Affiche soirée arcade rétro "
-                    data-description="Design graphique · Affiche événementielle">
-                    <img src="images/photoshop/affiche soirée.png"
-                        alt="Affiche soirée arcade rétro">
-                    <span>Affiche événementielle</span>
+            </article>
+            <article class="work ">
+                <button class="work-image" data-tilt type="button" data-image="images/portfolio/biscelia.webp" data-title="Maison Biscélia" data-description="Présentation d’une boutique de biscuits sur ordinateur, tablette et mobile. Aucune vente réelle." aria-label="Agrandir : Maison Biscélia">
+                    <img src="images/portfolio/biscelia.webp" alt="Maison Biscélia" width="1536" height="1024" loading="lazy" decoding="async">
+                    <span class="image-action" aria-hidden="true">Agrandir ↗</span>
                 </button>
-
-                <button class="gallery-item" type="button"
-                    data-image="images/photoshop/présentation Géonimaux.png"
-                    data-title="Publication réseaux sociaux Géonimaux"
-                    data-description="Design graphique · Message de présentation">
-                    <img src="images/photoshop/présentation Géonimaux.png"
-                        alt="Publication réseaux sociaux Géonimaux">
-                    <span>Prévention routière</span>
-                </button>
-
-                <button class="gallery-item wide" type="button"
-                    data-image="images/photoshop/affiche info évent.png"
-                    data-title="Affiche d'Informations sur le fonctionnement de l'asso Metapixl">
-                    <img src="images/photoshop/affiche info évent.png" alt="Affiche d'Informations sur le fonctionnement de l'asso Metapixl">
-                    <span>Festival</span>
-                </button>
-
-                <button class="gallery-item" type="button"
-                    data-image="images/photoshop/Cartographie.webp" data-title="Cartographie et visualisation territoriale"
-                    data-description="Compositing · Affiche de campagne">
-                    <img src="images/photoshop/Cartographie.webp" alt="Cartographie et visualisation territoriale">
-                    <span>Infographie</span>
-                </button>
-
-                <button class="gallery-item tall" type="button"
-                    data-image="images/photoshop/Lacoste_jonathan_TD06%20copie.webp"
-                    data-title="Dualité" data-description="Photomanipulation · Retouche et effets spéciaux">
-                    <img src="images/photoshop/Lacoste_jonathan_TD06%20copie.webp"
-                        alt="Retouche photo sur le thème de la dualité">
-                    <span>Photomanipulation</span>
-                </button>
-
-                <button class="gallery-item" type="button"
-                    data-image="images/photoshop/tombola%20copie.webp"
-                    data-title="Tombola réseaux sociaux"
-                    data-description="Affiche publicitaire · Visuel pour réseaux sociaux">
-                    <img src="images/photoshop/tombola%20copie.webp" alt="Pub tombola pour réseaux sociaux">
-                    <span>Social media</span>
-                </button>
-
-                <button class="gallery-item" type="button"
-                    data-image="images/photoshop/Lacoste_Jonathan_TD06_Portrait_V2%20copie.webp"
-                    data-title="Portrait pop-up" data-description="Art digital · Portrait illustré">
-                    <img src="images/photoshop/Lacoste_Jonathan_TD06_Portrait_V2%20copie.webp"
-                        alt="Portrait style Pop-Up">
-                    <span>Portrait digital</span>
-                </button>
-
-                <button class="gallery-item wide" type="button"
-                    data-image="images/photoshop/ban%C3%A8re_helloassov2%20copie%202.webp"
-                    data-title="Bannière HelloAsso" data-description="Webdesign · Bannière web">
-                    <img src="images/photoshop/ban%C3%A8re_helloassov2%20copie%202.webp"
-                        alt="Bannière HelloAsso">
-                    <span>Bannière web</span>
-                </button>
-
-                <button class="gallery-item" type="button"
-                    data-image="images/photoshop/cartes de visite.png"
-                    data-title="carte de visite" data-description="Identité visuelle · Création de carte de visite">
-                    <img src="images/photoshop/cartes de visite.png" alt="Logo Géonimaux">
-                    <span>Identité visuelle</span>
-                </button>
-            </div>
-        </section>
-
-
-        <section class="section projects-section" id="projets">
-            <div class="section-heading split-heading">
-                <div>
-                    <span class="section-kicker">Projets web</span>
-                    <h2>Des réalisations orientées expérience, apprentissage et prise en main concrète.</h2>
+                <div class="work-caption">
+                    <div>
+                        <p class="work-tag">Boutique de démonstration · Projet fictif</p>
+                        <h3>Maison Biscélia</h3>
+                        <p>Présentation d’une boutique de biscuits sur ordinateur, tablette et mobile. Aucune vente réelle.</p>
+                    </div>
+                    <a class="text-link" href="https://demo.joenibiru.fr/boutique/" target="_blank" rel="noopener noreferrer">Visiter la boutique <span aria-hidden="true">↗</span></a>
                 </div>
-                <a class="text-link" href="https://github.com/joenibiru" target="_blank" rel="noreferrer">
-                    GitHub
-                    <span aria-hidden="true">↗</span>
-                </a>
-            </div>
-
+            </article>
+            <article class="work ">
+                <button class="work-image" data-tilt type="button" data-image="images/portfolio/jean-guy.webp" data-title="Jean-Guy Multiservices" data-description="Création d’un logo et présentation de son identité visuelle." aria-label="Agrandir : Jean-Guy Multiservices">
+                    <img src="images/portfolio/jean-guy.webp" alt="Jean-Guy Multiservices" width="1536" height="1024" loading="lazy" decoding="async">
+                    <span class="image-action" aria-hidden="true">Agrandir ↗</span>
+                </button>
+                <div class="work-caption">
+                    <div>
+                        <p class="work-tag">Identité visuelle · Projet fictif</p>
+                        <h3>Jean-Guy Multiservices</h3>
+                        <p>Création d’un logo et présentation de son identité visuelle.</p>
+                    </div>
+                </div>
+            </article>
+            <article class="work ">
+                <button class="work-image" data-tilt type="button" data-image="images/portfolio/soiree-jeux.webp" data-title="Soirée jeux" data-description="Une composition autour des jeux de société pour un événement fictif à Marvejols." aria-label="Agrandir : Soirée jeux">
+                    <img src="images/portfolio/soiree-jeux.webp" alt="Soirée jeux" width="1536" height="1024" loading="lazy" decoding="async">
+                    <span class="image-action" aria-hidden="true">Agrandir ↗</span>
+                </button>
+                <div class="work-caption">
+                    <div>
+                        <p class="work-tag">Affiche événementielle · Événement fictif</p>
+                        <h3>Soirée jeux</h3>
+                        <p>Une composition autour des jeux de société pour un événement fictif à Marvejols.</p>
+                    </div>
+                </div>
+            </article>
+            <article class="work ">
+                <button class="work-image" data-tilt type="button" data-image="images/portfolio/cartes.webp" data-title="Joenibiru — cartes de visite" data-description="Déclinaison de l’identité Joenibiru sur un support de contact imprimé." aria-label="Agrandir : Joenibiru — cartes de visite">
+                    <img src="images/portfolio/cartes.webp" alt="Joenibiru — cartes de visite" width="1536" height="1024" loading="lazy" decoding="async">
+                    <span class="image-action" aria-hidden="true">Agrandir ↗</span>
+                </button>
+                <div class="work-caption">
+                    <div>
+                        <p class="work-tag">Identité personnelle · Print</p>
+                        <h3>Joenibiru — cartes de visite</h3>
+                        <p>Déclinaison de l’identité Joenibiru sur un support de contact imprimé.</p>
+                    </div>
+                </div>
+            </article>
+            <article class="work work-social">
+                <button class="work-image" data-tilt type="button" data-image="images/portfolio/visibilite.webp" data-title="Le trio de votre visibilité" data-description="Un visuel Joenibiru qui relie site web, fiche Google et réseaux sociaux." aria-label="Agrandir : Le trio de votre visibilité">
+                    <img src="images/portfolio/visibilite.webp" alt="Le trio de votre visibilité" width="1254" height="1254" loading="lazy" decoding="async">
+                    <span class="image-action" aria-hidden="true">Agrandir ↗</span>
+                </button>
+                <div class="work-caption">
+                    <div>
+                        <p class="work-tag">Communication digitale · Réseaux sociaux</p>
+                        <h3>Le trio de votre visibilité</h3>
+                        <p>Un visuel Joenibiru qui relie site web, fiche Google et réseaux sociaux.</p>
+                    </div>
+                    <a class="text-link" href="https://www.joenibiru.fr" target="_blank" rel="noopener noreferrer">Visiter le site <span aria-hidden="true">↗</span>
+                    </a>
+                </div>
+            </article>
+        </div>
+        </div></details>
+<details class="more-work">
+            <summary>Autres projets web <span aria-hidden="true">+</span>
+            </summary>
             <div class="project-grid">
                 <article class="project-card featured">
                     <div class="project-meta">
@@ -280,7 +170,6 @@
                         Voir le projet
                     </a>
                 </article>
-
                 <article class="project-card">
                     <div class="project-meta">
                         <span>Culture</span>
@@ -295,7 +184,6 @@
                         Voir le projet
                     </a>
                 </article>
-
                 <article class="project-card">
                     <div class="project-meta">
                         <span>Jeu</span>
@@ -309,22 +197,6 @@
                         Voir le projet
                     </a>
                 </article>
-
-                <article class="project-card">
-                    <div class="project-meta">
-                        <span>Site vitrine</span>
-                        <span>Bien-être</span>
-                    </div>
-                    <h3>Réflexologie plantaire</h3>
-                    <p>
-                        Site vitrine clair, rassurant et orienté prise de contact pour une activité locale.
-                    </p>
-                    <a class="project-link" href="https://laeti-reflexologie.netlify.app/" target="_blank"
-                        rel="noreferrer">
-                        Voir le projet
-                    </a>
-                </article>
-
                 <article class="project-card">
                     <div class="project-meta">
                         <span>Site vitrine</span>
@@ -340,143 +212,268 @@
                     </a>
                 </article>
             </div>
-        </section>
-
-         <section class="section skills-section" id="competences">
-            <div class="section-heading split-heading">
-                <div>
-                    <span class="section-kicker">Compétences</span>
-                    <h2>Un socle technique, créatif et éditorial pour construire des expériences complètes.</h2>
-                </div>
-                <p class="section-note">Profil orienté front-end, design d'interface et communication numérique.</p>
+        </details>
+        <details class="more-work" id="creations">
+            <summary>Explorations graphiques <span aria-hidden="true">+</span>
+            </summary>
+            <div class="gallery-grid" data-gallery>
+                <button class="gallery-item tall" type="button"
+                    data-image="images/portfolio/archive-1.webp"
+                    data-title="Affiche soirée arcade rétro "
+                    data-description="Design graphique · Affiche événementielle">
+                    <img width="990" height="1400" loading="lazy" decoding="async" src="images/portfolio/archive-1.webp"
+                    alt="Affiche soirée arcade rétro">
+                    <span>Affiche événementielle</span>
+                </button>
+                <button class="gallery-item" type="button"
+                    data-image="images/portfolio/archive-2.webp"
+                    data-title="Publication réseaux sociaux Géonimaux"
+                    data-description="Design graphique · Message de présentation">
+                    <img width="990" height="1400" loading="lazy" decoding="async" src="images/portfolio/archive-2.webp"
+                    alt="Publication réseaux sociaux Géonimaux">
+                    <span>Géonimaux</span>
+                </button>
+                <button class="gallery-item wide" type="button"
+                    data-image="images/portfolio/archive-3.webp"
+                    data-title="Affiche d'Informations sur le fonctionnement de l'asso Metapixl">
+                    <img width="990" height="1400" loading="lazy" decoding="async" src="images/portfolio/archive-3.webp" alt="Affiche d'Informations sur le fonctionnement de l'asso Metapixl">
+                    <span>Association Metapixl</span>
+                </button>
+                <button class="gallery-item" type="button"
+                    data-image="images/portfolio/archive-4.webp" data-title="Cartographie et visualisation territoriale"
+                    data-description="Cartographie et visualisation territoriale">
+                    <img width="1400" height="788" loading="lazy" decoding="async" src="images/portfolio/archive-4.webp" alt="Cartographie et visualisation territoriale">
+                    <span>Infographie</span>
+                </button>
+                <button class="gallery-item tall" type="button"
+                    data-image="images/portfolio/archive-5.webp"
+                    data-title="Dualité" data-description="Photomanipulation · Retouche et effets spéciaux">
+                    <img width="1400" height="1400" loading="lazy" decoding="async" src="images/portfolio/archive-5.webp"
+                    alt="Retouche photo sur le thème de la dualité">
+                    <span>Photomanipulation</span>
+                </button>
+                <button class="gallery-item" type="button"
+                    data-image="images/portfolio/archive-6.webp"
+                    data-title="Tombola réseaux sociaux"
+                    data-description="Affiche publicitaire · Visuel pour réseaux sociaux">
+                    <img width="1400" height="1400" loading="lazy" decoding="async" src="images/portfolio/archive-6.webp" alt="Pub tombola pour réseaux sociaux">
+                    <span>Social media</span>
+                </button>
+                <button class="gallery-item" type="button"
+                    data-image="images/portfolio/archive-7.webp"
+                    data-title="Portrait pop-up" data-description="Art digital · Portrait illustré">
+                    <img width="1400" height="1400" loading="lazy" decoding="async" src="images/portfolio/archive-7.webp"
+                    alt="Portrait style Pop-Up">
+                    <span>Portrait digital</span>
+                </button>
+                <button class="gallery-item wide" type="button"
+                    data-image="images/portfolio/archive-8.webp"
+                    data-title="Bannière HelloAsso" data-description="Webdesign · Bannière web">
+                    <img width="1400" height="190" loading="lazy" decoding="async" src="images/portfolio/archive-8.webp"
+                    alt="Bannière HelloAsso">
+                    <span>Bannière web</span>
+                </button>
+                <button class="gallery-item" type="button"
+                    data-image="images/portfolio/archive-9.webp"
+                    data-title="carte de visite" data-description="Identité visuelle · Création de carte de visite">
+                    <img width="1043" height="728" loading="lazy" decoding="async" src="images/portfolio/archive-9.webp" alt="Création de carte de visite">
+                    <span>Identité visuelle</span>
+                </button>
             </div>
-
-            <div class="skills-layout">
-                <article class="skill-panel">
-                    <h3>Développement</h3>
-                    <div class="skill-tags">
-                        <span>HTML5</span>
-                        <span>CSS3</span>
-                        <span>JavaScript</span>
-                        <span>React</span>
-                        <span>Responsive design</span>
-                        <span>API REST</span>
-                        <span>PHP</span>
-                        <span>MySQL</span>
-                    </div>
-                </article>
-
-                <article class="skill-panel">
-                    <h3>Design & contenu</h3>
-                    <div class="skill-tags">
-                        <span>Photoshop</span>
-                        <span>Illustrator</span>
-                        <span>Figma</span>
-                        <span>UI design</span>
-                        <span>Retouche photo</span>
-                        <span>Affiche</span>
-                        <span>Visuels réseaux sociaux</span>
-                    </div>
-                </article>
-
-                <article class="skill-panel">
-                    <h3>Workflow</h3>
-                    <div class="skill-tags">
-                        <span>Git / GitHub</span>
-                        <span>VS Code</span>
-                        <span>WordPress</span>
-                        <span>Premiere Pro</span>
-                        <span>Veille numérique</span>
-                        <span>Communication</span>
-                    </div>
-                </article>
-            </div>
-        </section>
-
-        <section class="section timeline-section" id="parcours">
+        </details>
+    </section>
+    <section class="services-wrap" id="prestations">
+        <div class="section container">
             <div class="section-heading">
-                <span class="section-kicker">Parcours</span>
-                <h2>Une reconversion construite sur l'expérience terrain, la formation et la pratique.</h2>
-            </div>
-
-            <div class="timeline-columns">
                 <div>
-                    <h3>Expérience professionnelle</h3>
-                    <ol class="timeline">
-                        <li>
-                            <time>2023 - 2024</time>
-                            <strong>Analyste d'exploitation BI</strong>
-                            <span>Lecture de données, logique métier, environnement applicatif et rigueur opérationnelle.</span>
-                        </li>
-                        <li>
-                            <time>2022 - 2023</time>
-                            <strong>Formation GRETA</strong>
-                            <span>Montée en compétences web, bases techniques et consolidation du projet professionnel.</span>
-                        </li>
-                        <li>
-                            <time>2003 - 2022</time>
-                            <strong>Boulanger</strong>
-                            <span>Organisation, précision, endurance et sens du résultat dans un métier exigeant.</span>
-                        </li>
-                    </ol>
+                    <p class="section-kicker">02 / Prestations</p>
+                    <h2>Une idée ?<br>Construisons la suite.</h2>
                 </div>
-
-                <div>
-                    <h3>Formation</h3>
-                    <ol class="timeline">
-                        <li>
-                            <time>2025 - 2026</time>
-                            <strong>LP1 CNEA · Université de Nîmes</strong>
-                            <span>Conception numérique, e-activités, graphisme web et communication digitale.</span>
-                        </li>
-                        <li>
-                            <time>2022 - 2023</time>
-                            <strong>Formation GRETA</strong>
-                            <span>Développement web, intégration, bases back-end et culture projet.</span>
-                        </li>
-                        <li>
-                            <time>1999 - 2002</time>
-                            <strong>CAP & BP Boulanger</strong>
-                            <span>Apprentissage du geste, méthode de travail et sens du détail.</span>
-                        </li>
-                    </ol>
-                </div>
+                <p class="section-note">Un même regard sur votre site, votre image et vos contenus pour une présence cohérente.</p>
             </div>
-        </section>
-
-        <section class="contact-section" id="contact">
-            <div class="contact-inner">
-                <span class="section-kicker">Contact</span>
-                <h2>Vous avez un projet web, une interface à repenser ou une identité visuelle à poser ? Parlons-en.</h2>
-                <div class="contact-actions">
-                    <a class="button button-primary" href="mailto:lacoste_jonathan@orange.fr">lacoste_jonathan@orange.fr</a>
-                    <a class="button button-secondary" href="tel:0640354317">06.40.35.43.17</a>
-                    <a class="button button-download" href="assets/CV-Jonathan-Lacoste.pdf"
-                        download="CV-Jonathan-Lacoste.pdf" type="application/pdf">Télécharger le CV PDF</a>
-                </div>
-                <div class="social-row" aria-label="Réseaux sociaux">
-                    <a href="https://www.linkedin.com/in/jonathan-lacoste-6bab36257/" target="_blank"
-                        rel="noreferrer">LinkedIn</a>
-                    <a href="https://github.com/joenibiru" target="_blank" rel="noreferrer">GitHub</a>
-                    <a href="https://twitter.com/joedww2022" target="_blank" rel="noreferrer">Twitter</a>
-                </div>
+            <div class="service-list">
+                <article>
+                    <span class="service-number">01</span>
+                    <h3>Sites & interfaces web</h3>
+                    <p>Sites vitrines, intégration front-end et interfaces responsive. Une information structurée, sur tous les écrans.</p>
+                    <span class="service-detail">HTML · CSS · JavaScript · WordPress</span>
+                </article>
+                <article>
+                    <span class="service-number">02</span>
+                    <h3>Identité & design graphique</h3>
+                    <p>Logos, affiches, cartes de visite et supports visuels. Donner une expression claire à votre identité.</p>
+                    <span class="service-detail">Photoshop · Illustrator · Figma</span>
+                </article>
+                <article>
+                    <span class="service-number">03</span>
+                    <h3>Communication digitale</h3>
+                    <p>Visuels pour les réseaux sociaux, bannières et contenus adaptés à votre message et à votre public.</p>
+                    <span class="service-detail">Contenus · Visuels sociaux · Bannières</span>
+                </article>
             </div>
-        </section>
-    </main>
-
-    <div class="lightbox" role="dialog" aria-modal="true" aria-labelledby="lightbox-title" hidden
-        data-lightbox>
-        <button class="lightbox-close" type="button" aria-label="Fermer l’image" data-lightbox-close>&times;</button>
-        <figure>
-            <img src="" alt="" data-lightbox-image>
-            <figcaption>
-                <strong id="lightbox-title" data-lightbox-title></strong>
-                <span data-lightbox-description></span>
-            </figcaption>
-        </figure>
+            <a class="text-link" href="#contact">Échangeons sur vos besoins ↗</a>
+        </div>
+    </section>
+    <section class="section container about" id="profil">
+        <div>
+            <p class="section-kicker">03 / À propos</p>
+            <h2>Jonathan.<br>
+            <span class="muted">Du geste à l’idée.</span>
+        </h2>
+        <p class="about-role">Développeur web et web mobile,<br>concepteur numérique et créatif.</p>
+        <a class="text-link" href="assets/CV-Jonathan-Lacoste.pdf" download>Télécharger mon CV PDF ↗</a>
     </div>
-
-    <script src="JS/main.js"></script>
+    <div class="about-copy">
+        <p class="large-copy">Ancien boulanger reconverti dans le numérique, j’ai gardé le goût du travail bien fait.</p>
+        <p>Structurer, composer, tester, améliorer : le support a changé, le sens du détail est resté. Je relie aujourd’hui développement front-end, design graphique et communication digitale.</p>
+        <p>Mon approche : comprendre le message, rendre l’information lisible et construire une expérience cohérente. Avec l’œil du designer et la rigueur du développeur.</p>
+        <p class="location">
+            <span class="dot" aria-hidden="true">
+            </span> Basé en Lozère</p>
+        </div>
+    </section>
+    <section class="section container skills-section" id="competences">
+        <div class="section-heading split-heading">
+            <div>
+                <span class="section-kicker">04 / Compétences</span>
+                <h2>Les outils derrière les idées.</h2>
+            </div>
+            <p class="section-note">Profil orienté front-end, design d'interface et communication numérique.</p>
+        </div>
+        <div class="skills-layout">
+            <article class="skill-panel">
+                <h3>Développement</h3>
+                <div class="skill-tags">
+                    <span>HTML5</span>
+                    <span>CSS3</span>
+                    <span>JavaScript</span>
+                    <span>React</span>
+                    <span>Responsive design</span>
+                    <span>API REST</span>
+                    <span>PHP</span>
+                    <span>MySQL</span>
+                </div>
+            </article>
+            <article class="skill-panel">
+                <h3>Design & contenu</h3>
+                <div class="skill-tags">
+                    <span>Photoshop</span>
+                    <span>Illustrator</span>
+                    <span>Figma</span>
+                    <span>UI design</span>
+                    <span>Retouche photo</span>
+                    <span>Affiche</span>
+                    <span>Visuels réseaux sociaux</span>
+                </div>
+            </article>
+            <article class="skill-panel">
+                <h3>Workflow</h3>
+                <div class="skill-tags">
+                    <span>Git / GitHub</span>
+                    <span>VS Code</span>
+                    <span>WordPress</span>
+                    <span>Premiere Pro</span>
+                    <span>Veille numérique</span>
+                    <span>Communication</span>
+                </div>
+            </article>
+        </div>
+    </section>
+    <section class="section container timeline-section" id="parcours">
+        <div class="section-heading">
+            <span class="section-kicker">05 / Parcours</span>
+            <h2>Un autre métier. La même exigence.</h2>
+        </div>
+        <div class="timeline-columns">
+            <div>
+                <h3>Expérience professionnelle</h3>
+                <ol class="timeline">
+                    <li>
+                        <time>2023 - 2024</time>
+                        <strong>Analyste d'exploitation BI</strong>
+                        <span>Lecture de données, logique métier, environnement applicatif et rigueur opérationnelle.</span>
+                    </li>
+                    <li>
+                        <time>2022 - 2023</time>
+                        <strong>Formation GRETA</strong>
+                        <span>Montée en compétences web, bases techniques et consolidation du projet professionnel.</span>
+                    </li>
+                    <li>
+                        <time>2003 - 2022</time>
+                        <strong>Boulanger</strong>
+                        <span>Organisation, précision, endurance et sens du résultat dans un métier exigeant.</span>
+                    </li>
+                </ol>
+            </div>
+            <div>
+                <h3>Formation</h3>
+                <ol class="timeline">
+                    <li>
+                        <time>2025 - 2026</time>
+                        <strong>LP1 CNEA · Université de Nîmes</strong>
+                        <span>Conception numérique, e-activités, graphisme web et communication digitale.</span>
+                    </li>
+                    <li>
+                        <time>2022 - 2023</time>
+                        <strong>Formation GRETA</strong>
+                        <span>Développement web, intégration, bases back-end et culture projet.</span>
+                    </li>
+                    <li>
+                        <time>1999 - 2002</time>
+                        <strong>CAP & BP Boulanger</strong>
+                        <span>Apprentissage du geste, méthode de travail et sens du détail.</span>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </section>
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <p class="section-kicker">06 / Votre prochain projet</p>
+            <h2>Une idée en tête ?<br>
+            <span>Parlons-en.</span>
+            <span aria-hidden="true">↗</span>
+        </h2>
+        <p>Un site à créer, une identité à poser, une communication à développer.<br>Racontez-moi votre projet.</p>
+        <div class="contact-actions">
+            <a class="button primary" href="mailto:lacoste_jonathan@orange.fr">Écrivez-moi <span aria-hidden="true">↗</span>
+            </a>
+            <a class="text-link" href="tel:+33640354317">06 40 35 43 17</a>
+        </div>
+        <div class="contact-details">
+            <a href="mailto:lacoste_jonathan@orange.fr">lacoste_jonathan@orange.fr</a>
+            <a href="mailto:contact@joenibiru.fr">contact@joenibiru.fr</a>
+            <a href="https://www.joenibiru.fr" target="_blank" rel="noopener noreferrer">Joenibiru.fr ↗</a>
+        </div>
+    </div>
+</section>
+</main>
+<footer class="container">
+    <a class="brand" href="#accueil">
+        <span class="brand-mark">jl<span>↗</span>
+    </span>
+    <span>Jonathan Lacoste<small>De l’idée naît votre identité.</small>
+    </span>
+</a>
+<div class="social-row">
+    <a href="https://www.linkedin.com/in/jonathan-lacoste-6bab36257/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+    <a href="https://github.com/joenibiru" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+    <a href="https://twitter.com/joedww2022" target="_blank" rel="noopener noreferrer">X / Twitter ↗</a>
+</div>
+<a class="back-top" href="#accueil">Retour en haut ↑</a>
+</footer>
+<dialog class="lightbox" aria-labelledby="lightbox-title">
+    <button class="lightbox-close" type="button" aria-label="Fermer l’image">Fermer ×</button>
+    <figure>
+        <img alt="">
+        <figcaption>
+            <h2 id="lightbox-title">
+        </h2>
+        <p class="lightbox-description">
+        </p>
+    </figcaption>
+</figure>
+</dialog>
+<nav class="mobile-shortcuts" aria-label="Accès rapides"><a href="#projets">Projets</a><a href="#prestations">Prestations</a><a class="shortcut-contact" href="mailto:contact@joenibiru.fr">Échangeons ↗</a></nav>
 </body>
-
 </html>
